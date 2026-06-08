@@ -1,0 +1,27 @@
+---
+layout: system
+title: clingo[DL]
+summary: clingo[DL] extends clingo with difference logic solving capabilities.
+date: '2017-06-19'
+---
+The system clingo[DL] provides a seamless way to integrate a subset of the theory of linear constraints, namely difference logic, into ASP. 
+It deals with constraints of the form `x-y<=k`, where `x` and `y` are integer variables and `k` is an integer constant. 
+Despite its restriction, difference logic can be used to naturally encode timing related problems, e.g., scheduling or timetabling, 
+and provides the additional advantage of being solvable in polynomial time. 
+Syntactically, a difference constraint `x-y<=k` is represented by a difference constraint atom of the form `&diff {x-y} <= k`.
+
+# Download
+
+- Recent clingo[DL] releases are on github: [https://github.com/potassco/clingoDL/releases](https://github.com/potassco/clingoDL/releases).
+- The latest source is on github: [github.com/potassco/clingoDL](https://github.com/potassco/clingoDL).
+
+# Resources
+
+- [Potassco User Guide](https://github.com/potassco/guide)
+- [Advanced Examples](https://github.com/potassco/clingoDL/tree/master/examples)
+
+# Publications
+
+- Tomi Janhunen, Roland Kaminski, Max Ostrowski, Torsten Schaub, Sebastian Schellhorn and Philipp Wanko,
+  [Clingo goes Linear Constraints over Reals and Integers]({{ site.publicationurl }}/#DBLP:journals/tplp/JanhunenKOSWS17), TPLP, 2017:
+  [[Experiments]({{ site.resourceurl }}/clingo/experiments-clingoLC.tar.xz)]

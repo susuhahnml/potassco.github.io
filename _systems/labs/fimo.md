@@ -1,0 +1,13 @@
+---
+layout: system
+title: fimo
+summary: A system for computing finite models of first-order theories.
+date: '2016-09-20'
+---
+fimo is a system for computing finite models of first-order theories
+(written in [TPTP](http://www.cs.miami.edu/~tptp/) format)
+via incremental Answer Set Programming.
+fimo uses [iclingo](/clingo/) for finding answer sets of the resulting logic program.
+An answer set represents a finite model of the input theory.
+
+- [Download](http://sourceforge.net/p/potassco/code/HEAD/tree/trunk/fimo/)

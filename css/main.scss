@@ -20,6 +20,9 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$navy-color:       #030C3E;
+$green-color:      #9DA322;
+
 // Width of the content area
 $content-width:    900px;
 
@@ -39,6 +42,7 @@ table.trophy {
     margin-bottom: 2em;
     width: 100%;
 }
+
 table.trophy td {
     padding-right: 2ex;
     padding-bottom: 1ex;
@@ -47,6 +51,15 @@ table.trophy td {
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+:root {
+    --blue-color: #025BFF;
+    --blue-color-rgb: 2, 91, 255;
+    --navy-color: #030C3E;
+    --navy-color-rgb: 3, 12, 62;
+    --green-color: #9DA322;
+    --green-color-rgb: 157, 163, 34;
+}
 
 .callout {
     display: grid;
@@ -59,25 +72,40 @@ table.trophy td {
 }
 
 .callout--blue {
-    border-left-color: #025BFF;
-    background: rgba(2, 91, 255, 0.06);
+    border-left-color: var(--blue-color);
+    background: rgba(var(--blue-color-rgb), 0.06);
 }
 
 .callout--navy {
-    border-left-color: #030C3E;
-    background: rgba(3, 12, 62, 0.06);
+    border-left-color: var(--navy-color);
+    background: rgba(var(--navy-color-rgb), 0.06);
 }
 
-
 .callout--green {
-    border-left-color: #9DA322;
-    background: rgba(157, 163, 34, 0.08);
+    border-left-color: var(--green-color);
+    background: rgba(var(--green-color-rgb), 0.08);
 }
 
 .callout__image {
     width: 150px;
     max-width: 100%;
     display: block;
+}
+
+code {
+    background: rgba(var(--green-color-rgb), 0.05);
+    border-color: rgba(var(--green-color-rgb), 0.12);
+}
+
+pre,
+.highlighter-rouge .highlight {
+    background: rgba(var(--green-color-rgb), 0.04);
+}
+
+pre code,
+.highlighter-rouge .highlight code {
+    background: transparent;
+    border-color: transparent;
 }
 
 @media (max-width: 799px) {

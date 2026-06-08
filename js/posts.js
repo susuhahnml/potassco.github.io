@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   var search_field = $('#search');
-  var search_clear = $('#search_area img');
+  var search_clear = $('#search_area .search_clear');
   var search_area = $('#search_results_area');
   var search_count = $('#result_count');
   var search_results = $('#search_results');
@@ -18,7 +18,7 @@ $(document).ready(function() {
     }
   });
 
-  var search = function(e) {
+  var search = function (e) {
     if (e && e.keyCode == 27) {
       clear();
     }
@@ -35,16 +35,16 @@ $(document).ready(function() {
     }
 
     search_count.text('(' + results.length + ')');
-    search_results.html(results.map(function(post) {
+    search_results.html(results.map(function (post) {
       return ('<li><a href="' + post.url + '">' + post.title + '</a><p>' + post.summary + '</p></li>');
     }).join(''));
   };
 
-  var clear = function() {
+  var clear = function () {
     search_field.val('');
     search();
   }
 
-  search_field.on('keyup',  search);
+  search_field.on('keyup', search);
   search_clear.on('click', clear);
 });

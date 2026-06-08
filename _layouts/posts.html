@@ -14,10 +14,11 @@ empty:
 
     {{ content }}
 
-    <div>
-      <div id="search_area">
-        <img src="/images/cancel.png" alt="X" style="display: none">
-        <input id="search" placeholder="Search">
+    <div id="search_area">
+      <div class="search_box">
+        <span class="search_icon" aria-hidden="true"></span>
+        <input id="search" type="search" placeholder="Search">
+        <button class="search_clear" type="button" aria-label="Clear search" style="display: none;">&times;</button>
       </div>
     </div>
 
@@ -68,29 +69,29 @@ empty:
 <script type="text/javascript" charset="utf-8">
   var posts = [
     {% for post in posts %}
-  {% assign category_parts = page.category | split: "/" %}
-  {% assign matches_category = true %}
-  {% for category_part in category_parts %}
-  {% unless category_part == "" %}
-  {% unless post.categories contains category_part %}
-  {% assign matches_category = false %}
-  {% break %}
-  {% endunless %}
-  {% endunless %}
-  {% endfor %}
-  {% if matches_category %}
-  {
-    title: { { post.title | strip_html | jsonify } },
-    summary: { { post.summary | strip_html | jsonify } },
-    content: { { post.content | strip_html | jsonify } },
-    url: { { post.url | strip_html | jsonify } },
-  },
-  {% endif %}
-  {% endfor %}
-  0];
+    {% assign category_parts = page.category | split: "/" %}
+    {% assign matches_category = true %}
+    {% for category_part in category_parts %}
+    {% unless category_part == "" %}
+    {% unless post.categories contains category_part %}
+    {% assign matches_category = false %}
+    {% break %}
+    {% endunless %}
+    {% endunless %}
+    {% endfor %}
+    {% if matches_category %}
+    {
+      title: {{ post.title | strip_html | jsonify }},
+      summary: {{ post.summary | strip_html | jsonify }},
+      content: {{ post.content | strip_html | jsonify }},
+      url: {{ post.url | strip_html | jsonify }}
+    },
+    {% endif %}
+    {% endfor %}
+    0];
   posts.pop();
 </script>
-<script type="text/javascript" src="{{ " /js/jquery.min.js" | prepend: full_base_url }}" charset="utf-8"></script>
-<script type="text/javascript" src="{{ " /js/json_search.0.9.0.js" | prepend: full_base_url }}"
+<script type="text/javascript" src="{{ "/js/jquery.min.js" | prepend: full_base_url }}" charset="utf-8"></script>
+<script type="text/javascript" src="{{ "/js/json_search.0.9.0.js" | prepend: full_base_url }}"
   charset="utf-8"></script>
-<script type="text/javascript" src="{{ " /js/posts.js" | prepend: full_base_url }}" charset="utf-8"></script>
+<script type="text/javascript" src="{{ "/js/posts.js" | prepend: full_base_url }}" charset="utf-8"></script>

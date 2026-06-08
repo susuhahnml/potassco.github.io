@@ -28,6 +28,10 @@ publicationurl: "https://www.cs.uni-potsdam.de/wv/publications"
 markdown: kramdown
 theme: minima
 
+collections:
+  systems:
+    output: true
+
 include:
   - _headers
 
@@ -42,6 +46,36 @@ asciidoctor:
 
 plugins:
   - jekyll-asciidoc
+defaults:
+  - scope:
+      path: ""
+      type: systems
+    values:
+      layout: system
+  - scope:
+      path: "_systems/core"
+      type: systems
+    values:
+      section: core
+      permalink: /:name/
+  - scope:
+      path: "_systems/stable"
+      type: systems
+    values:
+      section: stable
+      permalink: /:name/
+  - scope:
+      path: "_systems/labs"
+      type: systems
+    values:
+      section: experimental
+      permalink: /labs/:name/
+  - scope:
+      path: "_systems/cemetery"
+      type: systems
+    values:
+      section: cemetery
+      permalink: /systems/cemetery/:name/
 
 webrick:
   headers:
