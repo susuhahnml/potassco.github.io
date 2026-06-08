@@ -3,6 +3,7 @@ layout: page
 title: About
 weight: 1
 menu: main
+hide_title: true
 permalink: /about/
 ---
 

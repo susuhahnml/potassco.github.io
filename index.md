@@ -14,11 +14,11 @@ permalink: /
 With our tools you can concentrate on an actual problem, rather than a smart way of implementing it.
 </div>
 
-<div style="height: 20pt;"></div>
+<div style="height: 40pt;"></div>
 
 
 <!-- #### Learning ASP -->
-**GETTING STARTED WITH ASP**
+**Getting Started with ASP**
 
 - A comprehensive documentation of our software can be found in the [Potassco guide](https://github.com/potassco/guide/releases/).
 - Further resources to learn more about ASP are available in the [documentation](/doc/) section of this website.
@@ -27,7 +27,7 @@ With our tools you can concentrate on an actual problem, rather than a smart way
 
 <!-- #### Our software -->
 
-**OUR SOFTWARE**
+**Our Software**
 
 Our software is open source!
 The source code of our projects is available on [GitHub](https://github.com/potassco/).

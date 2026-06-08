@@ -3,6 +3,7 @@ layout: page
 title: Support
 menu: main
 weight: 5
+hide_title: true
 permalink: /support/
 ---
 

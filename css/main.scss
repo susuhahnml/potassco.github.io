@@ -108,8 +108,22 @@ pre code,
     border-color: transparent;
 }
 
+body {
+    background:
+        linear-gradient(135deg, rgba(var(--navy-color-rgb), 0.05) 0%, rgba(var(--blue-color-rgb), 0.04) 52%, rgba(var(--green-color-rgb), 0.06) 100%);
+}
+
 @media (max-width: 799px) {
     .callout {
         grid-template-columns: 1fr;
     }
 }
+
+
+// .landing-hero {
+//     margin: 0 0 2rem;
+//     padding: 1.75rem 1.75rem 1.5rem;
+//     border: 1px solid rgba(var(--navy-color-rgb), 0.14);
+//     border-radius: 18px;
+//     background: rgba(255, 255, 255, 0.52);
+// }

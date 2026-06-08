@@ -3,6 +3,7 @@ layout: page
 title: Systems
 menu: main
 weight: 2
+hide_title: true
 permalink: /systems/
 ---
 
