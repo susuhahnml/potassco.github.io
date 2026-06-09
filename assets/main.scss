@@ -231,9 +231,10 @@ table.trophy td {
     margin: 1.5em 0;
     padding: 0;
     border-left: 4px solid $brand-color; /* Brand accent */
-    border-radius: 0 4px 4px 0; /* Rounded right corners */
+    // border-radius: 0 4px 4px 0; /* Rounded right corners */
     overflow: hidden;
-    background: #f8f9fa;
+    border-radius: 6px;
+    background: rgba(var(--blue-color-rgb), 0.06);
   }
 
   .admonitionblock > table {
@@ -254,39 +255,47 @@ table.trophy td {
     border: none !important; /* Kill table border */
   }
 
+  .admonitionblock td.icon::before {
+    font: var(--fa-font-solid);
+    font-size: 1.1rem;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
   .admonitionblock.note {
-    border-color: #007bff;
+    border-color: var(--blue-color);
   }
   .admonitionblock.note td.icon:before {
-    content: "ℹ️";
-    color: #007bff;
+    content: "\f05a";
+    color: var(--blue-color);
   }
   .admonitionblock.tip {
-    border-color: #28a745;
+    border-color: var(--green-color)  ;
   }
   .admonitionblock.tip td.icon:before {
-    content: "💡";
-    color: #28a745;
+    content: "\f0eb";
+    color: var(--green-color);
   }
   .admonitionblock.important {
     border-color: #ffc107;
   }
   .admonitionblock.important td.icon:before {
-    content: "⚠️";
+    content: "\f071";
     color: #ffc107;
   }
   .admonitionblock.warning {
     border-color: #fd7e14;
   }
   .admonitionblock.warning td.icon:before {
-    content: "⚠️";
+    content: "\f071";
     color: #fd7e14;
   }
   .admonitionblock.caution {
     border-color: #dc3545;
   }
   .admonitionblock.caution td.icon:before {
-    content: "🚨";
+    content: "\f06a";
     color: #dc3545;
   }
 
@@ -300,7 +309,7 @@ table.trophy td {
   .listingblock > .content > pre,
   .highlight {
     margin: 2rem 0;
-    border-left: 4px solid $brand-color; /* Brand accent */
+    border-left: 4px solid var(--navy-color); /* Brand accent */
     background: #f4f4f4;
     border-radius: 0 4px 4px 0; /* Rounded right corners */
     padding: 1rem;
@@ -341,7 +350,7 @@ table.trophy td {
   }
 
   .ace_editor {
-    border-left: 4px solid $brand-color; /* Brand accent */
+    border-left: 4px solid var(--green-color); /* Brand accent */
     border-radius: 0 4px 4px 0; /* Rounded right corners */
     margin: 1em 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle Minima shadow */
@@ -503,7 +512,7 @@ table.trophy td {
   max-width: $content-width;
   min-width: 0;
   padding: 2em;
-  border-radius: 0;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 1em;

@@ -1,7 +1,9 @@
 ---
 layout: system
 title: clingraph
+summary: A system for ASP-based visualization.
 ---
+
 clingraph is a tool which takes graph specifications in terms of ASP facts and hands them over to the graph visualization system [graphviz](https://graphviz.org/).
 This tool offers:
 * Integration with clingo

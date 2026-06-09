@@ -21,9 +21,14 @@ permalink: /systems/
 {% assign cemetery_items_ordered = systems | where: "section", "cemetery" | where_exp: "item", "item.order != nil" | sort: "order" %}
 {% assign cemetery_items = cemetery_items_ordered | concat: cemetery_items_alpha %}
 
-Our systems are open source, feel free to contribute and report issues.
 
-The source code of our projects is available on [GitHub](https://github.com/potassco/) and [Legacy code](https://sourceforge.net/p/potassco/code).
+{% include callout.html
+   tone="green"
+   link="https://github.com/potassco/"
+   text='Our systems are <b>open source</b>, feel free to contribute and report issues.
+The source code of our projects is available on <a href="https://github.com/potassco/">GitHub</a> and <a href="https://sourceforge.net/p/potassco/code">Legacy code</a>.' %}
+
+<div style="height: 20pt;"></div>
 
 
 {% include callout.html

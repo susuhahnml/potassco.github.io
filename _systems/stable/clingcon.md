@@ -1,7 +1,9 @@
 ---
 layout: system
 title: clingcon
+summary: An answer set solver for constraint logic programs.
 ---
+
 Clingcon is an answer set solver for constraint logic programs,
 building upon the answer set solver clingo.
 It extends the high-level modeling language of ASP with constraint solving capacities.

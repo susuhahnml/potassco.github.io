@@ -1,7 +1,9 @@
 ---
 layout: system
 title: asprin
+summary: A system for qualitative and quantitative optimization in ASP.
 ---
+
 asprin is a general framework for qualitative and quantitative optimization in ASP that allows:
 * computing optimal stable models of logic programs with preferences, and
 * defining new preference types in a very easy way.

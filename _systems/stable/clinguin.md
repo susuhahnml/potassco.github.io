@@ -1,7 +1,9 @@
 ---
 layout: system
 title: clinguin
+summary: A system for interactive user interfaces based on ASP.
 ---
+
 clinguin is a tool which enables ASP developers to create interactive User Interface (UI) prototypes using only ASP.
 UIs are defined as sets of facts, which are then rendered by a frontend to provide continuous interaction with ASP solvers based on user-triggered events.
 
