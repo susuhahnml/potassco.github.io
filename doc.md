@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Documentation
-menu: main
+# menu: main
 weight: 3
 hide_title: true
 permalink: /doc/

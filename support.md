@@ -1,21 +1,41 @@
 ---
-layout: page
+layout: posts
 title: Support
 menu: main
 weight: 5
 hide_title: true
 permalink: /support/
+sorting: alpha
+category: faq
+search_placeholder: Search FAQs
 ---
 
-- Be sure to take a look at the [documentation page](/doc/) especially the [getting started page](/doc/start).
-- Check our [FAQ](/doc/faq/).
-- If you think you found a bug,
-  please take the time to report it using the issue trackers of the respective projects:
+
+## Before asking for help
+
+Be sure to first take a look at the [documentation page](/resources/) especially the [guide](/guide).
+
+## Found a bug?
+
+Please take the time to report it using the issue trackers of the respective projects:
   - [clingo issues](https://github.com/potassco/clingo/issues)
   - [clasp issues](https://github.com/potassco/clasp/issues)
   - [website issues](https://github.com/potassco/potassco.github.io/issues)
   - or find the project among the [Potassco gits](https://github.com/potassco)
-- You can also sign up to our [mailing lists](https://sourceforge.net/p/potassco/mailman/) hosted on sourceforge.
+
+## Reach out to us
+
+You can reach out to us via email at <a href="mailto:potassco-users@lists.sourceforge.net">potassco-users@lists.sourceforge.net</a>.
+
+- Also check the <a href="https://sourceforge.net/p/potassco/mailman/potassco-users/">potassco-users archive</a>, maybe your question already has an answer.
+
+{% include callout.html
+   tone="blue"
+   icon='<i class="fa-solid fa-envelope"></i>'
+   link="https://sourceforge.net/p/potassco/mailman/"
+   text='You can also sign up to this <a href="https://sourceforge.net/p/potassco/mailman/">mailing lists</a> hosted on sourceforge. <br>
   The potassco-users list is for all kinds of questions about our tools
-  and the potassco-announce list is a read-only low frequency list where we announce new releases.
-  Also check the [potassco-users archive](https://sourceforge.net/p/potassco/mailman/potassco-users/), maybe your question already has an answer.
+  and the potassco-announce list is a read-only low frequency list where we announce new releases.' %}
+
+## Frequently Asked Questions
+

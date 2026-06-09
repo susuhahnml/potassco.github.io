@@ -62,28 +62,94 @@ h6 {
     line-height: 1.2;
 }
 
-h1 {
-    font-size: clamp(1.35rem, 2.4vw, 1.6rem);
+// h1 {
+//     font-size: clamp(1.35rem, 2.4vw, 1.6rem);
+// }
+
+.post-content h1 {
+    font-size: 27px;
 }
 
-h2 {
-    font-size: clamp(1.15rem, 2vw, 1.3rem);
+.post-content h2 {
+    font-size: 22px;
 }
 
-h3 {
-    font-size: 1rem;
+.post-content h3 {
+    font-size: 19px;
 }
 
-h4 {
-    font-size: 0.95rem;
+.post-content h4 {
+    font-size: 17px;
 }
 
-h5 {
-    font-size: 0.9rem;
+.post-header h1 {
+    font-size: 27px;
 }
+
+.post-header h2 {
+    font-size: 22px;
+}
+
+.post-header h3 {
+    font-size: 19px;
+}
+
+.post-header h4 {
+    font-size: 17px;
+}
+
+.home-hero-title {
+    margin: 0 0 1rem;
+    // font-size: clamp(2.4rem, 5vw, 3.6rem)!important;
+    font-size: 30pt !important;
+    line-height: 1.2;
+    // letter-spacing: -0.04em;
+    font-weight: 500;
+    color: var(--navy-color);
+    // text-wrap: balance;
+    // animation: home-hero-enter 0.8s ease-out;
+    padding-bottom: 0.2rem;
+}
+
+.home-hero-sub-title {
+    margin: 0 0 1rem;
+    font-size: 18pt !important;
+    line-height: 1.4;
+    // font-weight: 800;
+    color: var(--navy-color);
+    // text-wrap: balance;
+    // animation: home-hero-enter 0.8s ease-out;
+    padding-bottom: 0.2rem;
+}
+
+
+@keyframes home-hero-enter {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// h3 {
+//     font-size: 1rem;
+// }
+
+// h4 {
+//     font-size: 0.95rem;
+// }
+
+// h5 {
+//     font-size: 0.9rem;
+// }
 
 .callout {
     padding: 1rem;
+    margin-bottom: 1rem;
     border-left: 4px solid;
     border-radius: 6px;
 }
@@ -96,7 +162,7 @@ h5 {
 }
 
 .callout--with-icon {
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 70px 1fr;
 }
 
 .callout--blue {
@@ -121,9 +187,9 @@ h5 {
 }
 
 .callout__icon {
-    width: 80px;
+    width: 60px;
     max-width: 80%;
-    min-height: 70px;
+    min-height: 50px;
     display: grid;
     place-items: center;
 }
@@ -143,7 +209,7 @@ h5 {
 .callout__icon .fa-solid,
 .callout__icon .fa-regular,
 .callout__icon .fa-brands {
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     line-height: 1;
 }
 

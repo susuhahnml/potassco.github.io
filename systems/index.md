@@ -29,7 +29,6 @@ permalink: /systems/
    text='Our systems are <b>open source</b>, feel free to contribute and report issues.
 The source code of our projects is available on <a href="https://github.com/potassco/">GitHub</a> and <a href="https://sourceforge.net/p/potassco/code">Legacy code</a>.' %}
 
-<div style="height: 20pt;"></div>
 
 
 {% include callout.html
@@ -50,15 +49,15 @@ Check out our <a href="/trophies/">trophy page</a>.' %}
 </div>
 
 <div id="search_results_area" style="display: none;">
-	<h3 id="search_results_heading" style="display:none">Search results: <span id="result_count"></span></h3>
+	<h2 id="search_results_heading" style="display:none">Search results: <span id="result_count"></span></h2>
 	<ul id="search_results" class="posts"></ul>
 </div>
 
 <div id="systems_sections">
 
-<h3 id="core-systems">Core systems</h3>
+<h2 id="core-systems">Core systems</h2>
 
-<h4>Our core systems.</h4>
+<h3>Systems that form the foundation of our tools.</h3>
 
 <ul class="posts">
 {% for item in core_items %}
@@ -66,9 +65,9 @@ Check out our <a href="/trophies/">trophy page</a>.' %}
 {% endfor %}
 </ul>
 
-<h3 id="stable-systems">Stable systems</h3>
+<h2 id="stable-systems">Stable systems</h2>
 
-<h4>Stable up to date systems that are currently maintained and supported.</h4>
+<h3>Stable up to date systems that are currently maintained and supported.</h3>
 
 <ul class="posts">
 {% for item in stable_items %}
@@ -76,9 +75,9 @@ Check out our <a href="/trophies/">trophy page</a>.' %}
 {% endfor %}
 </ul>
 
-<h3 id="experimental-systems">Experimental systems</h3>
+<h2 id="experimental-systems">Experimental systems</h2>
 
-<h4>These are either small utilities or projects in an early or unfinished development phase.</h4>
+<h3>These are either small utilities or projects in an early or unfinished development phase.</h3>
 
 <ul class="posts">
 {% for item in experimental_items %}
@@ -86,9 +85,9 @@ Check out our <a href="/trophies/">trophy page</a>.' %}
 {% endfor %}
 </ul>
 
-<h3 id="cemetery">Cemetery</h3>
+<h2 id="cemetery">Cemetery</h2>
 
-<h4>Superseded programs that no longer belong to the Potassco suite.</h4>
+<h3>Superseded programs that no longer belong to the Potassco suite.</h3>
 
 <ul class="posts">
 {% for item in cemetery_items %}

@@ -4,7 +4,7 @@ title: Trophies
 permalink: /trophies/
 ---
 
-# [Configurable SAT Solver Challenge 2013](http://www.cs.ubc.ca/labs/beta/Projects/CSSC2013/results.html)
+## [Configurable SAT Solver Challenge 2013](http://www.cs.ubc.ca/labs/beta/Projects/CSSC2013/results.html)
 
 <table class="trophy">
 <tr>
@@ -19,7 +19,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [MISC 2012 CUDF Solver Competition](http://www.mancoosi.org/misc-2012/results/)
+## [MISC 2012 CUDF Solver Competition](http://www.mancoosi.org/misc-2012/results/)
 
 <table class="trophy">
 <tr>
@@ -34,7 +34,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [PB Competition 2012](http://www.cril.univ-artois.fr/PB12/)
+## [PB Competition 2012](http://www.cril.univ-artois.fr/PB12/)
 
 <table class="trophy">
 <tr>
@@ -54,7 +54,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [SAT Challenge 2012](http://baldur.iti.kit.edu/SAT-Challenge-2012/results.html)
+## [SAT Challenge 2012](http://baldur.iti.kit.edu/SAT-Challenge-2012/results.html)
 
 <table class="trophy">
 <tr>
@@ -64,7 +64,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [ASP Competition 2011](https://www.mat.unical.it/aspcomp2011/FrontPage)
+## [ASP Competition 2011](https://www.mat.unical.it/aspcomp2011/FrontPage)
 
 <table class="trophy">
 <tr>
@@ -114,7 +114,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [SAT 2011 Competition](http://www.satcompetition.org/)
+## [SAT 2011 Competition](http://www.satcompetition.org/)
 
 <table class="trophy">
 <tr>
@@ -138,7 +138,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [PB Competition 2011](http://www.cril.univ-artois.fr/PB11/)
+## [PB Competition 2011](http://www.cril.univ-artois.fr/PB11/)
 
 <table class="trophy">
 <tr>
@@ -153,7 +153,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [MISC 2011 CUDF Solver Competion](http://mancoosi.org/misc-2011/)
+## [MISC 2011 CUDF Solver Competion](http://mancoosi.org/misc-2011/)
 
 <table class="trophy">
 <tr>
@@ -172,7 +172,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [CADE ATP System Competition 2011](http://www.cs.miami.edu/~tptp/CASC/)
+## [CADE ATP System Competition 2011](http://www.cs.miami.edu/~tptp/CASC/)
 
 <table class="trophy">
 <tr>
@@ -186,7 +186,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [ASP Competition 2009](http://www.cs.kuleuven.be/~dtai/events/ASP-competition/Results.shtml)
+## [ASP Competition 2009](http://www.cs.kuleuven.be/~dtai/events/ASP-competition/Results.shtml)
 
 <table class="trophy">
 <tr>
@@ -201,7 +201,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [SAT Competition 2009](http://www.satcompetition.org/)
+## [SAT Competition 2009](http://www.satcompetition.org/)
 
 <table class="trophy">
 <tr>
@@ -216,7 +216,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [PB Evaluation 2009](http://www.cril.univ-artois.fr/PB09/results/ranking.php?idev=28)
+## [PB Evaluation 2009](http://www.cril.univ-artois.fr/PB09/results/ranking.php?idev=28)
 
 <table class="trophy">
 <tr>
@@ -230,7 +230,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [ASP System Competition 2007](http://asparagus.cs.uni-potsdam.de/contest/index.php?page=results)
+## [ASP System Competition 2007](http://asparagus.cs.uni-potsdam.de/contest/index.php?page=results)
 
 <table class="trophy">
 <tr>
@@ -245,7 +245,7 @@ permalink: /trophies/
 </tr>
 </table>
 
-# [PB Evaluation 2007](http://www.cril.univ-artois.fr/PB07/results/ranking.php?idev=9)
+## [PB Evaluation 2007](http://www.cril.univ-artois.fr/PB07/results/ranking.php?idev=9)
 
 <table class="trophy">
 <tr>
