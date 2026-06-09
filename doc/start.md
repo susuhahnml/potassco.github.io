@@ -2,7 +2,6 @@
 layout: page
 title: Getting Started
 permalink: /doc/start/
-menu: main
 weight: 2
 ---
 
@@ -46,7 +45,7 @@ Example facts are
 
 Solutions to a problem, or simply answer sets, are given by sets of atomic propositions
 that are supposed to be true in the answer set; false propositions are omitted.
-A solution to the above rule and the three facts is the answer set 
+A solution to the above rule and the three facts is the answer set
 containing all three facts as well as the proposition `innocent(sally)`.
 This is because our rule applies to `sally` but not `harry`.
 
@@ -66,7 +65,7 @@ The ASP system clingo allows us to compute the aforementioned answer set:
 
 # Reading
 
-A formal introduction to (a large fragment of) the input language of clingo 
+A formal introduction to (a large fragment of) the input language of clingo
 and its precise semantics can be found [here](http://www.cs.utexas.edu/users/vl/papers/AG.pdf).
 You may also be interested in the [ASP-Core-2](https://www.mat.unical.it/aspcomp2013/files/ASP-CORE-2.03b.pdf) language standard,
 a subset of the language of clingo.

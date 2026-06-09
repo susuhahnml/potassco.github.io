@@ -25,10 +25,16 @@
         {% comment %}
         https://stackoverflow.com/questions/25452429/excluding-page-from-jekyll-navigation-bar
         {% endcomment %}
+        {% assign current_url = page.url | replace: 'index.html', '' %}
+        {% assign guide_active = false %}
+        {% if current_url == '/guide/' or current_url contains '/guide/' %}
+        {% assign guide_active = true %}
+        {% endif %}
+        <a class="page-link{% if guide_active %} page-link--active{% endif %}" {% if guide_active %} aria-current="page"
+          {% endif %} href="{{ '/guide/' | prepend: full_base_url }}">Guide</a>
         {% assign pages = site.pages | sort: 'weight' %}
         {% for my_page in pages %}
         {% if my_page.menu == 'main' %}
-        {% assign current_url = page.url | replace: 'index.html', '' %}
         {% assign nav_url = my_page.url | replace: 'index.html', '' %}
         {% assign is_active = false %}
         {% if current_url == nav_url %}
