@@ -24,14 +24,14 @@ constraint solving including:
  - Dedicated Propagation of Extended Rules (over Cardinality and Weight Constraints)
  - Equivalence Reasoning and Resolution-based Preprocessing
 
-# Download
+## Download
 
 - Most recent clasp releases are on github: [github.com/potassco/clasp/releases](https://github.com/potassco/clasp/releases).
 - The latest source is on github: [github.com/potassco/clasp](https://github.com/potassco/clasp).
 - Older versions (up to 3.2.0) are on sourceforge: [sourceforge.net/projects/potassco/files/clasp](https://sourceforge.net/projects/potassco/files/clasp/).
 - Ancient versions (prior to 1.1.1) are provided on request.
 
-# Packages
+## Packages
 
 - Packages for all major platforms are available for the [Anaconda](https://conda.io) distribution
   in the [Potassco channel](https://anaconda.org/potassco/clingo).
@@ -45,7 +45,7 @@ constraint solving including:
 [homebrew](https://formulae.brew.sh/formula/clingo) and
 [macports](https://www.macports.org/ports.php?by=name&substr=clasp).
 
-# Usage
+## Usage
 
 clasp reads problems either from stdin, e.g
 
@@ -61,11 +61,11 @@ Type
 
 to get an overview of the most important options supported by clasp.
 
-# Citing
+## Publications
 
 - [Conflict-Driven Answer Set Solving: From Theory to Practice]({{ site.publicationurl }}/#DBLP:journals/ai/GebserKS12), Artificial Intelligence, 2012
 
-# Publications
+## Publications
 
 - Martin Gebser, Benjamin Kaufmann, Andr&#233; Neumann and Torsten Schaub,
   [clasp: A Conflict-Driven Answer Set Solver]({{ site.publicationurl }}/#DBLP:conf/lpnmr/GebserKNS07a), LPNMR'07, 2007

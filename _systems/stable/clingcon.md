@@ -13,7 +13,7 @@ like conflict-driven learning and theory propagation.
 It uses lazy nogood and variable generation on the order encoding
 and features several preprocessing techniques.
 
-# Features
+## Features
 
 * integer linear constraints
   * `&sum{3*x; 4*y} >= z-7`
@@ -26,7 +26,7 @@ and features several preprocessing techniques.
 * multi-objective optimization on constraint variables
   * `&minimize{x;y;z}`
 
-# Example
+## Example
 
 ~~~~
 #include "csp.lp".
@@ -55,24 +55,24 @@ step(0..end).
 
 More examples can be found in the [example](https://github.com/potassco/clingcon/tree/master/examples) section.
 
-# Download
+## Download
 
 - Recent clingcon 3.x releases are on github: [github.com/potassco/clingcon/releases](https://github.com/potassco/clingcon/releases).
 - The latest source is on github: [github.com/potassco/clingcon](https://github.com/potassco/clingcon).
 - Clingcon up to version 2.x is available on sourceforge: [sourceforge.net/projects/potassco/files/clingcon](https://sourceforge.net/projects/potassco/files/clingcon/).
 
-# Building
+## Building
 
 See [INSTALL](https://github.com/potassco/clingcon/blob/master/README.md) for more details.
 
-# Benchmarks
+## Benchmarks
 
 - [Experiments for clingcon 3]({{ site.resourceurl }}/clingcon/experiments-clingcon-3.tar.xz)
 - [Experiments for clingcon 2]({{ site.resourceurl }}/clingcon/experiments-clingcon-2.tar.xz)
 - [Experiments for clingcon 1]({{ site.resourceurl }}/clingcon/experiments-clingcon-1.tar.xz)
 - [Experiments for new-old]({{ site.resourceurl }}/clingcon/experiments-newold.tar.xz)
 
-# Citing
+## Publications
 - Max Ostrowski,
   [Modern Constraint Answer Set Solving]({{ site.publicationurl }}/#DBLP:phd/dnb/Ostrowski18), Thesis, 2018 (for version 3)
 - Mutsunori Banbara, Benjamin Kaufmann, Max Ostrowski and Torsten Schaub,

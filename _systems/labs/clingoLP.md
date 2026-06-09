@@ -62,10 +62,10 @@ Example:
     + Starts a solve call of the LP solver if at least n% of the theory atoms are decided (default prop-heur=0)
   + --ilp
     + Sets the LP solver to solve an Integer Linear Programming (ILP) problem
-  
+
   + All clingo options
   + Number of solutions controlled via clingo
-  
+
 ## Publication
 
 - Tomi Janhunen, Roland Kaminski, Max Ostrowski, Torsten Schaub, Sebastian Schellhorn and Philipp Wanko,

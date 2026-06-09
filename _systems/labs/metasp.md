@@ -15,7 +15,7 @@ For solving, the Potassco tools [gringo](/clingo/) 3 and [clasp](/clasp/) 3 (pre
 
 [Citation]({{ site.publicationurl }}/#DBLP:journals/tplp/GebserKS11)
 
-# Publications
+## Publications
 
 - Martin Gebser, Roland Kaminski and Torsten Schaub,
   [Complex Optimization in Answer Set Programming: Extended Version]({{ site.publicationurl }}/#TEMP:journals/tplp/GebserKS11x),

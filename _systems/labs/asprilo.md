@@ -6,7 +6,7 @@ date: '2018-02-20'
 permalink: "/asprilo/"
 asprilourl: https://asprilo.github.io
 ---
-# What is *asprilo*?
+## What is *asprilo*?
 
 **asprilo** is an benchmarking framework to study typical scenarios in intra-logistics and warehouse
 automation with multiple mobile robots. It offers a concise specification of this problem domain
@@ -23,15 +23,15 @@ approach that complies with its fact-based I/O interface.
 
 (*Click images for video playback*)
 
-# Documentation
+## Documentation
 
 A detailed documentation of asprilo's problem domain and key components can be found at <https://asprilo.github.io/>
 
-# Development
+## Development
 
 The source code of the project is available at <https://github.com/potassco/asprilo>
 
-# Publications
+## Publications
 
 - Gebser, M., Obermeier, P., Otto, T., Schaub, T., Sabuncu, O., Nguyen, V., & Son, T. C. (2018). [Experimenting with robotic intra-logistics domains]({{ site.publicationurl }}//#DBLP:journals/corr/abs-1804-10247). *CoRR*, abs/1804.10247. [[Experiments]({{ page.asprilourl }}/experiments/#evaluation-2018-02)]
 - Gebser, M., Obermeier, P., Otto, T., Schaub, T., Sabuncu, O., Nguyen, V., & Son, T. C. (2018). [Experimenting with robotic intra-logistics domains]({{ site.publicationurl }}//#DBLP:journals/tplp/GebserOOS18). *TPLP*, 18(3-4), 502–519. [[Experiments]({{ page.asprilourl }}/experiments/#evaluation-2018-02)]

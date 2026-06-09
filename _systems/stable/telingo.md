@@ -11,15 +11,15 @@ clingo's language features, like for example aggregates; only the way programs
 are grounded and solved is adjusted.
 
 
-# Download
+## Download
 
 - Source code and binary releases are on GitHub: [github.com/potassco/telingo](https://github.com/potassco/telingo).
 
-# Resources
+## Resources
 
 - [telingo-lambda](https://github.com/krr-up/telingo-lambda) A version of telingo for a fixed horizon.
 
-# Citing
+## Publications
 
 - Pedro Cabalar, Roland Kaminski, Philip Morkisch, Torsten Schaub
   [telingo = ASP + Time]({{ site.publicationurl }}/#DBLP:conf/lpnmr/CabalarKMS19), LPNMR, 2019

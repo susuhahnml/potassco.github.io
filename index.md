@@ -8,7 +8,7 @@ permalink: /
 
 
 <h1 class="home-hero-title">
-The <span style="color: var(--green-color);">Pot</span>sdam <span style="color: var(--green-color);">A</span>nswer <span style="color: var(--green-color);">S</span>et <span style="color: var(--green-color);">S</span>olving <span style="color: var(--green-color);">Co</span>llection, bundles tools for Answer Set Programming developed at the University of Potsdam.
+The <span class="home-hero-letter">Pot</span>sdam <span class="home-hero-letter">A</span>nswer <span class="home-hero-letter">S</span>et <span class="home-hero-letter">S</span>olving <span class="home-hero-letter">Co</span>llection, bundles tools for Answer Set Programming developed at the University of Potsdam.
 </h1>
 
 <!-- The **Pot**sdam **A**nswer Set **S**olving **Co**llection, bundles tools for Answer Set Programming developed at the [University of Potsdam](https://uni-potsdam.de). -->
@@ -55,7 +55,7 @@ We have developed a comprehensive [suite of systems](/systems/) to expand modeli
 
 
 {% include callout.html
-   tone="green"
+   tone="navy"
    image="/images/uni-potsdam.png"
    alt="University of Potsdam logo"
    link="https://www.uni-potsdam.de/"

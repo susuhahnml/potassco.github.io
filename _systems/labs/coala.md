@@ -8,7 +8,7 @@ Coala is a python tool that translates BC into ASP facts.
 For earlier versions for other action language see [Legacy](#legacy).
 If you found a bug or would like to leave a comment, please write an email to &#99;&#104;&#114;&#105;&#115;&#116;&#105;&#97;&#110;.&#115;&#99;&#104;&#117;&#108;&#122;-&#104;&#97;&#110;&#107;&#101;( &#97;&#116; )&#99;s.uni-potsdam.de
 
-# Content
+## Content
 - [Features](#features)
 - [Download](#download)
 - [Install](#installation)
@@ -18,7 +18,7 @@ If you found a bug or would like to leave a comment, please write an email to &#
 - [Hints](#hints)
 - [Legacy](#legacy)
 
-# Features
+## Features
 
 Coala features the following options:
 
@@ -33,10 +33,10 @@ Coala features the following options:
     - Incrementally generating Plans given an initial State, goal fluent-assignments
     - Printing States and Transitions of BC Progams with integers (using clingcon)
 
-# Download
+## Download
 Get the most recent Version from Github: https://github.com/potassco/coala
 
-# Installation
+## Installation
 Download the file, unpack it and install it using
 
 ```
@@ -49,7 +49,7 @@ Alternatively, it can be run directly from the unpacked folder using python
     python coala/coala
 ```
 
-# Usage
+## Usage
 When installed, coala can be called from anywhere.
 
 ```
@@ -57,7 +57,7 @@ When installed, coala can be called from anywhere.
 ```
 
 In order to print states and transitions for a BC encoding,
-the facts given by coala can be run the "encodings/base_translation.lp" using clingo. 
+the facts given by coala can be run the "encodings/base_translation.lp" using clingo.
 
 ```
     coala file.bc | clingo - encodings/base_translation.lp 0
@@ -107,7 +107,7 @@ StateBuilder arguments
     --only_positive, -p Do not output fluents that hold the value false
 Solve arguments
     --max_horizon <arg>, -z <arg>   Set the maximal horizon. 0 equals no horizon; Default =  10
-    --encoding_i <arg>  Set the encoding for solving iteratively; 
+    --encoding_i <arg>  Set the encoding for solving iteratively;
     --encoding_f <arg>  Set the encoding for solving with fixed horizon;
 ```
 
@@ -116,7 +116,7 @@ Some addition Information is given using the help parameter
     coala -h
 ```
 
-# Syntax
+## Syntax
 
 The language has the following reserved words:
 - not, true, false, if, causes,
@@ -240,19 +240,19 @@ And goals can be defined using
 <goal> winning.
 ```
 
-# Examples
+## Examples
 coala includes a few examples, like:
-  
+
 - examples/medical.bc
 - examples/sumo.bc
 - examples/walkbot.bc
-  
+
 These examples include one instance each.
-  
+
 - examples/medical\_instance.bc
 - examples/sumo\_instance.bc
 - examples/walkbot\_instance.bc
-  
+
 
 These example can be translated by passing them to coala
 ```
@@ -264,7 +264,7 @@ In order to generate states and transitions using clingo for some example, you c
 ```
 This will generate one answer set for every transition.
 ```
-[...]  
+[...]
 Answer: 40
 action(act(drink(cup(water)))) action(act(medicate)) action(act(look)) fluent(infected) fluent(hydrated) fluent(dead) domain(hydrated,true)
 domain(hydrated,false) domain(infected,true) domain(infected,false) domain(dead,true) domain(dead,false) dynamic_law(law(1)) head(law(1),val(hydrated,true))
@@ -288,7 +288,7 @@ after(id(nonexecutable,law(5)),act(medicate)) after(id(nonexecutable,law(5)),val
 holds(val(dead,true),0) holds(val(infected,false),1) holds(val(hydrated,true),1) holds(val(dead,true),1) occurs(act(look),0)
 SATISFIABLE
 
-Models       : 40    
+Models       : 40
 Calls        : 1
 Time         : 0.209s (Solving: 0.11s 1st Model: 0.00s Unsat: 0.01s)
 CPU Time     : 0.000s
@@ -303,7 +303,7 @@ we provide a script for cleaning the clingo output for BC output, called outputf
 
 This generates the following output:
 ```
-[...]  
+[...]
 Answer: 39
 holds(val(dead,true),0)
 holds(val(dead,true),1)
@@ -342,7 +342,7 @@ Step  2 : ['-dead', '-infected', 'hydrated']
 
 
 (
-Additionally to these examples, the "testcases" directory contains additional files that may help understanding the syntax. 
+Additionally to these examples, the "testcases" directory contains additional files that may help understanding the syntax.
 However, some of the testcases need to be run with experimental parameters which are not listed.
 Files with the ending ".b" are written for the action description language B, therefore the parameter "-l b" must be used.
 Files beginning with "role_" are written using a modular approach and are translated using the parameter "-l bce" or "-l bca".
@@ -360,7 +360,7 @@ Incremental solving by example can be done calling
 ```
 
 
-# Hints
+## Hints
 It is possible to use variables representing any action or fluent.
 
 
@@ -389,7 +389,7 @@ You can use the print states mode of coala with the (currently gringo) python li
 Printing only positive fluents ( -p ) may prove useful there.
 
 
-# Legacy
+## Legacy
 
 Coala earlier than 2.0 is a versatile compiler from action languages to answer set programs.
 It supports different encodings, variables and LTL style queries.

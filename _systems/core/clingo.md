@@ -19,18 +19,18 @@ Both clingo and gringo are released together in one package.
 For processing legacy encodings, we recommend downloading the latest version of clingo 3 in addition to clingo 4.
 The language did not change in version 5 but there were many API changes.
 
-# Running
+## Running
 
 To get a quick first impression, you may want to experiment with [running clingo](/clingo/run/) in your browser.
 
-# Download
+## Download
 
 - Recent clingo releases are on GitHub: [github.com/potassco/clingo/releases][clingo-releases].
 - The latest source is on GitHub: [github.com/potassco/clingo][clingo-github].
 - clingo up to version 4.x is available on sourceforge: [sourceforge.net/projects/potassco/files/clingo][clingo-sf].
 - clingo versions 2.x are also available on sourceforge: [sourceforge/projects/potassco/files/gringo][gringo-sf].
 
-# Resources
+## Resources
 
 - [Potassco guide on GitHub][guide-github] for series 5 and later
 - [Potassco guide on Sourceforge][guide-sf] for series 4 and earlier
@@ -56,7 +56,7 @@ To get a quick first impression, you may want to experiment with [running clingo
   [5.0](/clingo/c-api/5.0/))
 - [Advanced Examples](/clingo/examples/)
 
-# Packages
+## Packages
 
 The easiest way to obtain Python enabled clingo packages is using [Anaconda][conda].
 Packages are available in the [conda-forge channel][conda-channel].
@@ -93,7 +93,7 @@ For Mac OS X, clingo packages are available in
 - [homebrew][package-brew], and
 - [macports][package-macports].
 
-# Related Projects
+## Related Projects
 
 - The [clorm] Python library provides an object relational mapper-like interface to clingo.
   It allows facts to be asserted and extracted in an intuitive and easy to use way.
@@ -104,7 +104,7 @@ For Mac OS X, clingo packages are available in
 - There are [java bindings][clingo-java] to clingo.
 - Syntax highlighting is available for [vim][clingo-vim] and [emacs][clingo-emacs].
 
-# Citing
+## Publications
 
 - Martin Gebser, Roland Kaminski, Benjamin Kaufmann and Torsten Schaub,
   [Multi-shot ASP solving with clingo]({{ site.publicationurl }}/#DBLP:journals/corr/GebserKKS17), TPLP, 19(1), 27–82, 2019

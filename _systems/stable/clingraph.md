@@ -11,15 +11,15 @@ This tool offers:
 * Multiple output formats such as pdf, svg, latex and gif
 
 
-# Download
+## Download
 
 - Source code and binary releases are on github: [github.com/potassco/clingraph](https://github.com/potassco/clingraph).
 
-# Documentation
+## Documentation
 
 - [Documentation webpage](https://clingraph.readthedocs.io/en/latest/)
 
-# Citing
+## Publications
 
 - Susana Hahn, Orkunt Sabuncu, Torsten Schaub, Tobias Stolzmann
   [Clingraph: A System for ASP-based Visualization]({{ site.publicationurl }}/#DBLP:journals/corr/abs-2303-10118), TPLP, 2023

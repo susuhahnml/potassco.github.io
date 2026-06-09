@@ -8,7 +8,7 @@ date: '2017-05-24'
 we propose solutions using ASP.
 
 
-# Demo
+## Demo
 
 A demo video in addition to our [IJCAI'17 paper](#gtapf_ijca17).
 
@@ -19,7 +19,7 @@ frameborder="0"
 allowfullscreen></iframe>
 
 
-# Publications
+## Publications
 
 1.  <a id="gtapf_ijca17"></a>Nguyen, V., Obermeier, P., Son, T., Schaub, T., Yeoh, W.: Generalized
     Target Assignment and Path Finding Using Answer Set Programming. In Proceedings of the

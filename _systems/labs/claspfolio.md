@@ -10,15 +10,15 @@ In 2009, claspfolio was the best single-system solver in the global ranking of t
 
 In 2011, claspfolio was the best single-system solver in the NP track and second place in the global ranking of the [Third ASP Competition](https://www.mat.unical.it/aspcomp2011/).
 
-# Download
+## Download
 
 Releases can be found on sourceforge: [sourceforge.net/projects/potassco/files/claspfolio](https://sourceforge.net/projects/potassco/files/claspfolio/)
 
-# Citation
+## Citation
 
 - [Overview article for claspfolio]({{ site.publicationurl }}/#DBLP:journals/tplp/HoosLS14)
 
-# Resources
+## Resources
 
 - [Algorithm Selection Library](http://aslib.net/)
 - [Resources]({{ site.resourceurl }}/claspfolio/resources.tar.xz)

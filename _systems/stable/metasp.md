@@ -12,7 +12,7 @@ The goal is to simplify the process of defining and running custom extensions by
 - Custom operators can be nested and appear anywhere in the encoding.
 
 
-### Useful features
+#### Useful features
 - Customization of output through Python scripts.
 - Logging from the ASP encodings.
 - Comment-based definition of tests for your extension as part of the ASP encodings.

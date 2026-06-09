@@ -17,21 +17,21 @@ All you have to do is install and then select aspcud as solver:
 
 More information about the cudf format can be found on the [Mancoosi](http://www.mancoosi.org/) homepage.
 
-# Download
+## Download
 
 - Recent versions are on github: [github.com/potassco/aspcud/releases](https://github.com/potassco/aspcud/releases)
 - Old versions are on sourceforge: [sourceforge.net/projects/potassco/aspcud](https://sourceforge.net/projects/potassco/files/aspcud/)
 
-# Packages
+## Packages
 
 - aspcud is available in [Debian](https://www.debian.org/) and [Ubuntu](http://www.ubuntu.com/).
 
-# Competition submissions
+## Competition submissions
 
 - [MISC competition 2012](http://www.mancoosi.org/misc-2012/)
 - [MISC competition 2011](http://www.mancoosi.org/misc-2011/)
 - [Fourth MISC-live run](http://www.mancoosi.org/misc-live/20110225/)
 
-# Citing
+## Publications
 
 - [Overview article for aspcud]({{ site.publicationurl }}/#DBLP:journals/corr/abs-1109-0113)
