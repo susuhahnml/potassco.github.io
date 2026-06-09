@@ -25,6 +25,7 @@ permalink: /systems/
 {% include callout.html
    tone="green"
    link="https://github.com/potassco/"
+    icon='<i class="fa-solid fa-code"></i>'
    text='Our systems are <b>open source</b>, feel free to contribute and report issues.
 The source code of our projects is available on <a href="https://github.com/potassco/">GitHub</a> and <a href="https://sourceforge.net/p/potassco/code">Legacy code</a>.' %}
 
@@ -33,7 +34,8 @@ The source code of our projects is available on <a href="https://github.com/pota
 
 {% include callout.html
    tone="blue"
-   link="https://www.uni-potsdam.de/"
+   icon='<i class="fa-solid fa-trophy"></i>'
+   link="/trophies/"
    text='Our systems won shiny awards in different competitions.
 Check out our <a href="/trophies/">trophy page</a>.' %}
 

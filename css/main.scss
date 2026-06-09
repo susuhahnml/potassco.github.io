@@ -95,6 +95,10 @@ h5 {
     align-items: center;
 }
 
+.callout--with-icon {
+    grid-template-columns: 110px 1fr;
+}
+
 .callout--blue {
     border-left-color: var(--blue-color);
     background: rgba(var(--blue-color-rgb), 0.06);
@@ -114,6 +118,33 @@ h5 {
     width: 150px;
     max-width: 100%;
     display: block;
+}
+
+.callout__icon {
+    width: 80px;
+    max-width: 80%;
+    min-height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.callout__icon--blue {
+    color: var(--blue-color);
+}
+
+.callout__icon--navy {
+    color: var(--navy-color);
+}
+
+.callout__icon--green {
+    color: var(--green-color);
+}
+
+.callout__icon .fa-solid,
+.callout__icon .fa-regular,
+.callout__icon .fa-brands {
+    font-size: 2.25rem;
+    line-height: 1;
 }
 
 
