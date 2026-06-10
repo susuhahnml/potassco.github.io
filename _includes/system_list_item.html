@@ -1,6 +1,23 @@
 {% assign summary = include.item.summary | default: include.item.excerpt | default: include.item.content %}
 {% assign summary = summary | strip_html | normalize_whitespace | truncate: 180 %}
+{% assign system_state = include.item.state | default: include.item.section | default: include.item.system_type |
+downcase %}
+{% assign state_label = system_state | capitalize %}
+{% if system_state == 'core' or system_state == 'flagship' %}
+{% assign system_state = 'flagship' %}
+{% assign state_label = 'Flagship' %}
+{% elsif system_state == 'stable' or system_state == 'major' %}
+{% assign system_state = 'major' %}
+{% assign state_label = 'Major' %}
+{% elsif system_state == 'experimental' or system_state == 'labs' %}
+{% assign system_state = 'experimental' %}
+{% assign state_label = 'Experimental' %}
+{% elsif system_state == 'cemetery' or system_state == 'deprecated' %}
+{% assign system_state = 'deprecated' %}
+{% assign state_label = 'Deprecated' %}
+{% endif %}
 <li>
     <a href="{{ include.item.url }}">{{ include.item.title }}</a>
+    {% if system_state %}<span class="system-badge system-badge--{{ system_state }}">{{ state_label }}</span>{% endif %}
     <p>{{ summary | capitalize }}</p>
 </li>

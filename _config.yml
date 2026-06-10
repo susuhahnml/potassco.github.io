@@ -28,9 +28,23 @@ publicationurl: "https://www.cs.uni-potsdam.de/wv/publications"
 markdown: kramdown
 theme: minima
 
+collections_dir: systems
+
 collections:
   systems:
     output: true
+  apps:
+    output: true
+    permalink: /doc/apps/:name/
+  faq:
+    output: true
+    permalink: /doc/faq/:name/
+  tutorials:
+    output: true
+    permalink: /doc/tutorials/:name/
+  videos:
+    output: true
+    permalink: /doc/videos/:name/
 
 include:
   - _headers
@@ -53,29 +67,25 @@ defaults:
     values:
       layout: system
   - scope:
-      path: "_systems/core"
-      type: systems
+      path: ""
+      type: apps
     values:
-      section: core
-      permalink: /:name/
+      layout: post
   - scope:
-      path: "_systems/stable"
-      type: systems
+      path: ""
+      type: faq
     values:
-      section: stable
-      permalink: /:name/
+      layout: post
   - scope:
-      path: "_systems/labs"
-      type: systems
+      path: ""
+      type: tutorials
     values:
-      section: experimental
-      permalink: /labs/:name/
+      layout: post
   - scope:
-      path: "_systems/cemetery"
-      type: systems
+      path: ""
+      type: videos
     values:
-      section: cemetery
-      permalink: /systems/cemetery/:name/
+      layout: post
 
 webrick:
   headers:

@@ -41,6 +41,8 @@
         {% assign is_active = true %}
         {% elsif nav_url != '/' and current_url contains nav_url %}
         {% assign is_active = true %}
+        {% elsif my_page.url == '/systems/' and page.collection == 'systems' %}
+        {% assign is_active = true %}
         {% endif %}
         {% if my_page.redirect %}
         <a class="page-link{% if is_active %} page-link--active{% endif %}" {% if is_active %} aria-current="page" {%

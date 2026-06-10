@@ -210,13 +210,14 @@ h6 {
 
 .callout--with-media {
     display: grid;
-    grid-template-columns: 170px 1fr;
+    grid-template-columns: 150px 1fr;
     gap: 1rem;
     align-items: center;
 }
 
 .callout--with-icon {
-    grid-template-columns: 70px 1fr;
+    grid-template-columns: 60px 1fr;
+    gap: 0rem;
 }
 
 .callout--blue {
@@ -235,15 +236,15 @@ h6 {
 }
 
 .callout__image {
-    width: 150px;
+    width: 130px;
     max-width: 100%;
     display: block;
 }
 
 .callout__icon {
-    width: 60px;
-    max-width: 80%;
-    min-height: 50px;
+    width: 40px;
+    max-width: 70%;
+    min-height: 30px;
     display: grid;
     place-items: center;
 }
@@ -263,8 +264,40 @@ h6 {
 .callout__icon .fa-solid,
 .callout__icon .fa-regular,
 .callout__icon .fa-brands {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 1;
+}
+
+.system-badge {
+    display: inline-block;
+    margin-left: 0.55rem;
+    padding: 0.12rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.system-badge--flagship {
+    background: rgba(var(--green-color-rgb), 0.1);
+    color: var(--green-color);
+}
+
+.system-badge--major {
+    background: rgba(var(--blue-color-rgb), 0.1);
+    color: var(--blue-color);
+}
+
+.system-badge--experimental {
+    background: rgba(var(--navy-color-rgb), 0.14);
+    color: var(--navy-color);
+}
+
+.system-badge--deprecated {
+    background: rgba(160, 78, 78, 0.12);
+    color: #8a3a3a;
 }
 
 

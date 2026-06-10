@@ -1,7 +1,5 @@
 ---
 layout: default
-empty:
--
 
 ---
 <article class="post">
@@ -16,6 +14,33 @@ empty:
 
     {{ content }}
 
+    {% case page.category %}
+    {% when "apps" %}
+    {% assign entries = site.apps %}
+    {% when "faq" %}
+    {% assign entries = site.faq %}
+    {% when "tutorials" %}
+    {% assign entries = site.tutorials %}
+    {% when "videos" %}
+    {% assign entries = site.videos %}
+    {% else %}
+    {% assign entries = "" | split: "," %}
+    {% endcase %}
+
+    {% if page.sorting == "alpha" %}
+    {% assign entries = entries | sort: "title" %}
+    {% elsif page.sorting == "weight" %}
+    {% assign grouped = entries | group_by: "weight" | sort: "name", "last" | reverse %}
+    {% assign weighted_entries = "" | split: "," %}
+    {% for group in grouped %}
+    {% assign items = group.items | sort: "title" %}
+    {% for item in items %}
+    {% assign weighted_entries = weighted_entries | push: item %}
+    {% endfor %}
+    {% endfor %}
+    {% assign entries = weighted_entries %}
+    {% endif %}
+
     <div id="search_area">
       <div class="search_box">
         <span class="search_icon" aria-hidden="true"></span>
@@ -27,37 +52,11 @@ empty:
     <div id="search_results_area">
       <h2 id="search_results_heading" style="display:none">Search results: <span id="result_count"></span></h2>
       <ul id="search_results" class="posts">
-        {% if page.sorting == "alpha" %}
-        {% assign posts = site.posts | sort: "title" %}
-        {% elsif page.sorting == "weight" %}
-        {% assign grouped = site.posts | group_by: "weight" | sort: "name", "last" | reverse %}
-        {% assign posts = "" | split: "," %}
-        {% for group in grouped %}
-        {% assign items = group["items"] | sort: "title" %}
-        {% for post in items %}
-        {% assign posts = posts | push: post %}
-        {% endfor %}
-        {% endfor %}
-        {% else %}
-        {% assign posts = site.posts %}
-        {% endif %}
-        {% for post in posts %}
-        {% assign category_parts = page.category | split: "/" %}
-        {% assign matches_category = true %}
-        {% for category_part in category_parts %}
-        {% unless category_part == "" %}
-        {% unless post.categories contains category_part %}
-        {% assign matches_category = false %}
-        {% break %}
-        {% endunless %}
-        {% endunless %}
-        {% endfor %}
-        {% if matches_category %}
+        {% for post in entries %}
         <li>
           <a href="{{ post.url }}">{{ post.title }}</a>
-          <p>{{ post.summary }}</p>
+          <p>{{ post.summary | default: "" }}</p>
         </li>
-        {% endif %}
         {% endfor %}
       </ul>
     </div>
@@ -70,28 +69,15 @@ empty:
 
 <script type="text/javascript" charset="utf-8">
   var posts = [
-    {% for post in posts %}
-  {% assign category_parts = page.category | split: "/" %}
-  {% assign matches_category = true %}
-  {% for category_part in category_parts %}
-  {% unless category_part == "" %}
-  {% unless post.categories contains category_part %}
-  {% assign matches_category = false %}
-  {% break %}
-  {% endunless %}
-  {% endunless %}
-  {% endfor %}
-  {% if matches_category %}
+    {% for post in entries %}
   {
     title: { { post.title | strip_html | jsonify } },
-    summary: { { post.summary | strip_html | jsonify } },
-    content: { { post.content | strip_html | jsonify } },
+    summary: { { post.summary | default: "" | strip_html | jsonify } },
+    content: { { post.content | strip_html | normalize_whitespace | jsonify } },
     url: { { post.url | strip_html | jsonify } }
-  },
-  {% endif %}
+  } {% unless forloop.last %}, {% endunless %}
   {% endfor %}
-  0];
-  posts.pop();
+  ];
 </script>
 <script type="text/javascript" src="{{ " /js/jquery.min.js" | prepend: full_base_url }}" charset="utf-8"></script>
 <script type="text/javascript" src="{{ " /js/json_search.0.9.0.js" | prepend: full_base_url }}"

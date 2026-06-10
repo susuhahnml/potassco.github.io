@@ -33,7 +33,6 @@ permalink: /
    </section>
 </div>
 
-</div>
 
 
 
@@ -57,4 +56,5 @@ permalink: /
    image="/images/pt_rgb_2colors_digital.svg"
    alt="Potassco Technology logo"
    link="https://potassco.com"
-   text='Our open source systems for ASP.' %}
+   text='Our <a href="/systems/">open source systems</a> for ASP, providing a large tool-suite to simplify modeling and integration in various applications.' %}
+</div>
