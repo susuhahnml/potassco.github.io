@@ -14,7 +14,7 @@ $spacing-unit: 30px;
 
 $text-color: #111;
 $background-color: #fdfdfd;
-$brand-color: #2a7ae2;
+$brand-color: #025BFF;
 
 $grey-color: #828282;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
@@ -27,6 +27,15 @@ $on-palm: 800px;
 $on-laptop: 800px;
 
 @import "minima";
+
+
+.site-header .wrapper {
+    max-width: 1100px;
+}
+
+.site-footer .wrapper {
+    max-width: 1100px;
+}
 
 :root {
     --blue-color: #025BFF;
@@ -261,6 +270,7 @@ table.trophy td {
     display: inline-block;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+    margin-right: 0.5em;
   }
 
   .admonitionblock.note {
@@ -272,6 +282,7 @@ table.trophy td {
   }
   .admonitionblock.tip {
     border-color: var(--green-color)  ;
+    background: rgba(var(--green-color-rgb), 0.1);
   }
   .admonitionblock.tip td.icon:before {
     content: "\f0eb";
@@ -279,13 +290,17 @@ table.trophy td {
   }
   .admonitionblock.important {
     border-color: #ffc107;
+    background: #ffc10710;
   }
   .admonitionblock.important td.icon:before {
     content: "\f071";
     color: #ffc107;
+    background: #ffc10710;
   }
   .admonitionblock.warning {
     border-color: #fd7e14;
+    background: #fd7e1410;
+
   }
   .admonitionblock.warning td.icon:before {
     content: "\f071";
@@ -293,6 +308,7 @@ table.trophy td {
   }
   .admonitionblock.caution {
     border-color: #dc3545;
+    background: #dc354510;
   }
   .admonitionblock.caution td.icon:before {
     content: "\f06a";

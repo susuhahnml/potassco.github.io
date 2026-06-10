@@ -31,12 +31,12 @@ The source code of our projects is available on <a href="https://github.com/pota
 
 
 
-{% include callout.html
+<!-- {% include callout.html
    tone="blue"
    icon='<i class="fa-solid fa-trophy"></i>'
    link="/trophies/"
    text='Our systems won shiny awards in different competitions.
-Check out our <a href="/trophies/">trophy page</a>.' %}
+Check out our <a href="/trophies/">trophy page</a>.' %} -->
 
 <div style="height: 20pt;"></div>
 
@@ -55,9 +55,8 @@ Check out our <a href="/trophies/">trophy page</a>.' %}
 
 <div id="systems_sections">
 
-<h2 id="core-systems">Core systems</h2>
+<h2 id="core-systems">Flagship systems</h2>
 
-<h3>Systems that form the foundation of our tools.</h3>
 
 <ul class="posts">
 {% for item in core_items %}
@@ -65,9 +64,8 @@ Check out our <a href="/trophies/">trophy page</a>.' %}
 {% endfor %}
 </ul>
 
-<h2 id="stable-systems">Stable systems</h2>
+<h2 id="stable-systems">Major systems</h2>
 
-<h3>Stable up to date systems that are currently maintained and supported.</h3>
 
 <ul class="posts">
 {% for item in stable_items %}
@@ -77,7 +75,6 @@ Check out our <a href="/trophies/">trophy page</a>.' %}
 
 <h2 id="experimental-systems">Experimental systems</h2>
 
-<h3>These are either small utilities or projects in an early or unfinished development phase.</h3>
 
 <ul class="posts">
 {% for item in experimental_items %}
@@ -85,9 +82,8 @@ Check out our <a href="/trophies/">trophy page</a>.' %}
 {% endfor %}
 </ul>
 
-<h2 id="cemetery">Cemetery</h2>
+<h2 id="cemetery">Deprecated systems</h2>
 
-<h3>Superseded programs that no longer belong to the Potassco suite.</h3>
 
 <ul class="posts">
 {% for item in cemetery_items %}

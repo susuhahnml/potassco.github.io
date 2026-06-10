@@ -17,11 +17,7 @@ Be sure to first take a look at the [documentation page](/resources/) especially
 
 ## Found a bug?
 
-Please take the time to report it using the issue trackers of the respective projects:
-  - [clingo issues](https://github.com/potassco/clingo/issues)
-  - [clasp issues](https://github.com/potassco/clasp/issues)
-  - [website issues](https://github.com/potassco/potassco.github.io/issues)
-  - or find the project among the [Potassco gits](https://github.com/potassco)
+Please take the time to report it using the issue trackers of the respective project in [GitHub](https://github.com/potassco).
 
 ## Reach out to us
 

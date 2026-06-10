@@ -6,6 +6,12 @@ nav_order: 1
 permalink: /guide/
 ---
 
+[WARNING]
+====
+This guide uses clingo v6 and is still under development.
+If you are using an older clingo version, please refer to the the https://github.com/potassco/guide/releases/[PDF guide]
+====
+
 include::_includes/macros.adoc[]
 
 The Potsdam Answer Set Solving Collection ({gringo}, {clasp}, and the

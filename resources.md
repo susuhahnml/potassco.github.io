@@ -54,21 +54,10 @@ while illustrating the overall solving process by practical examples.
 
 - Example programs ([zip](/files/listings.zip), [tgz](/files/listings.tgz))
 
-#### Table of Contents
-
-1.  Motivation
-2.  Introduction
-3.  Basic modeling
-4.  Grounding
-5.  Characterizations
-6.  Solving
-7.  Systems
-8.  Advanced modeling
-9.  Conclusions
+## Valdimir's book
 
 
-
-### More
+## More
 
 * The [Related ASP projects](/related/) collects projects from other research groups that are related to our tools and ASP in general.
 * The [Potassco apps](/doc/apps/) comprise projects involving our tools, we found interesting.
