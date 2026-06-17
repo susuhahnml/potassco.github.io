@@ -8,8 +8,9 @@ permalink: /guide/
 
 [WARNING]
 ====
-This guide uses clingo v6 and is still under development.
-If you are using an older clingo version, please refer to the the https://github.com/potassco/guide/releases/[PDF guide]
+This guide for clingo version 6 is a work in progress. If you are using an
+earlier clingo release, please refer to our
+https://github.com/potassco/guide/releases/[PDF guide].
 ====
 
 include::_includes/macros.adoc[]

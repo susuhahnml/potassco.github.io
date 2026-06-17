@@ -4,9 +4,9 @@ layout: default
 {% assign github_repo = page.github_repo | default: page.slug %}
 {% assign system_state = page.state | default: page.section | default: page.system_type | downcase %}
 {% assign state_label = system_state | capitalize %}
-{% if system_state == 'core' or system_state == 'flagship' %}
-{% assign system_state = 'flagship' %}
-{% assign state_label = 'Flagship' %}
+{% if system_state == 'core' %}
+{% assign system_state = 'core' %}
+{% assign state_label = 'Core' %}
 {% elsif system_state == 'stable' or system_state == 'major' %}
 {% assign system_state = 'major' %}
 {% assign state_label = 'Major' %}

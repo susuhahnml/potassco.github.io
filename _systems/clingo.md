@@ -1,11 +1,12 @@
 ---
 layout: system
-title: clingo and gringo
-summary: The core system of the Potassco suite, combining the grounder gringo and the solver clasp into a monolithic system.
-state: flagship
+title: clingo
+summary: The core system of the Potassco suite, providing a powerful system for ASP solving.
+state: core
 permalink: "/clingo/"
 order: 1
 ---
+
 Current answer set solvers work on variable-free programs.
 Hence, a grounder is needed that, given an input program with first-order variables, computes an equivalent ground (variable-free) program.
 gringo is such a grounder.

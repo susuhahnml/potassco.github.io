@@ -3,9 +3,9 @@
 {% assign system_state = include.item.state | default: include.item.section | default: include.item.system_type |
 downcase %}
 {% assign state_label = system_state | capitalize %}
-{% if system_state == 'core' or system_state == 'flagship' %}
-{% assign system_state = 'flagship' %}
-{% assign state_label = 'Flagship' %}
+{% if system_state == 'core' %}
+{% assign system_state = 'core' %}
+{% assign state_label = 'Core' %}
 {% elsif system_state == 'stable' or system_state == 'major' %}
 {% assign system_state = 'major' %}
 {% assign state_label = 'Major' %}

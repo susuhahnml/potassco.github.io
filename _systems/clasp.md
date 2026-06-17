@@ -2,9 +2,10 @@
 layout: system
 title: clasp
 summary: An answer set solver for (extended) normal and disjunctive logic programs.
-state: flagship
+state: core
 permalink: "/clasp/"
 ---
+
 clasp is an answer set solver for (extended) normal and disjunctive logic programs.
 It combines the high-level modeling capacities of ASP with state-of-the-art techniques from the area of Boolean constraint solving.
 The primary clasp algorithm relies on conflict-driven nogood learning, a technique that proved very successful for satisfiability checking (SAT).
@@ -18,12 +19,12 @@ or as a C++ library in another program.
 clasp provides different reasoning modes and advanced features from Boolean
 constraint solving including:
 
- - Enumeration of (Projected) Solutions
- - Optimization of Solutions
- - Cautious and Brave Reasoning
- - Conflict-driven (and optionally multithreaded) search
- - Dedicated Propagation of Extended Rules (over Cardinality and Weight Constraints)
- - Equivalence Reasoning and Resolution-based Preprocessing
+- Enumeration of (Projected) Solutions
+- Optimization of Solutions
+- Cautious and Brave Reasoning
+- Conflict-driven (and optionally multithreaded) search
+- Dedicated Propagation of Extended Rules (over Cardinality and Weight Constraints)
+- Equivalence Reasoning and Resolution-based Preprocessing
 
 ## Download
 
@@ -39,12 +40,12 @@ constraint solving including:
   First [install either Anaconda or Miniconda](https://conda.io/docs/user-guide/install/index.html) and then run:
   `conda install -c potassco clingo`
 - Packages for clasp are available in the linux distributions
-[Debian](https://packages.debian.org/clasp),
-[Ubuntu](https://packages.ubuntu.com/clasp), and
-[Arch Linux](https://www.archlinux.org/packages/clasp).
+  [Debian](https://packages.debian.org/clasp),
+  [Ubuntu](https://packages.ubuntu.com/clasp), and
+  [Arch Linux](https://www.archlinux.org/packages/clasp).
 - For Mac OS X, clasp is available in
-[homebrew](https://formulae.brew.sh/formula/clingo) and
-[macports](https://www.macports.org/ports.php?by=name&substr=clasp).
+  [homebrew](https://formulae.brew.sh/formula/clingo) and
+  [macports](https://www.macports.org/ports.php?by=name&substr=clasp).
 
 ## Usage
 
@@ -70,7 +71,7 @@ to get an overview of the most important options supported by clasp.
 
 - Martin Gebser, Benjamin Kaufmann, Andr&#233; Neumann and Torsten Schaub,
   [clasp: A Conflict-Driven Answer Set Solver]({{ site.publicationurl }}/#DBLP:conf/lpnmr/GebserKNS07a), LPNMR'07, 2007
-   \[[Experiments]({{ site.resourceurl }}/clasp/experiments-rc4-system.tar.xz)\]
+  \[[Experiments]({{ site.resourceurl }}/clasp/experiments-rc4-system.tar.xz)\]
 - Martin Gebser, Benjamin Kaufmann, Andr&#233; Neumann and Torsten Schaub,
   [Conflict-Driven Answer Set Enumeration]({{ site.publicationurl }}/#DBLP:conf/lpnmr/GebserKNS07), LPNMR'07, 2007
   \[[Experiments]({{ site.resourceurl }}/clasp/experiments-rc4-enumeration.tar.xz)\]
@@ -104,5 +105,3 @@ to get an overview of the most important options supported by clasp.
 - Jori Bomanson, Martin Gebser, Tomi Janhunen, Benjamin Kaufmann and Torsten Schaub,
   [Answer Set Programming Modulo Acyclicity]({{ site.publicationurl }}/#DBLP:journals/fuin/BomansonGJKS16), Fundamenta Informaticae, 2016
   \[[Experiments]({{ site.resourceurl }}/clasp/experiments-acyclicity.tar.xz)\]
-
-
