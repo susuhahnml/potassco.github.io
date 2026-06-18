@@ -11,7 +11,7 @@ permalink: /labs/<fillname>/
 --------- INSTRUCTIONS ---------
 
 1. Copy this file to systems/\_systems/<fillname>.md
-2. Set `state` to one of: `core`, `major`, `experimental`, or `deprecated`.
+2. Set `state` to one of: `stable`, `experimental`, or `deprecated`.
 
 3. Fill all <fill...> fields in the document
 4. Remove all instructions and unnecessary sections (e.g., if there are no publications, remove the Publications section)

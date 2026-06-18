@@ -17,19 +17,18 @@ permalink: /
       <!-- <h3 class="home-feature-title">Get started with Answer Set Programming</h3> -->
       <p class="home-feature-text">Answer Set Programming (ASP) offers a simple and powerful modeling language to solve combinatorial problems. With our systems you can concentrate on an actual problem, rather than a smart way of implementing it.</p>
       <div class="home-feature-actions">
-         <a class="home-hero-button" href="/guide/">Interactive Guide</a>
-         <a class="home-hero-button home-hero-button--secondary" href="/resources/">Resources</a>
+         <a class="home-hero-button" href="/guide/">Guide</a>
+         <a class="home-hero-button home-hero-button--secondary" href="/resources/">More</a>
       </div>
    </section>
 
    <section class="home-feature home-feature--clingo">
       <p class="home-feature-eyebrow">The clingo system</p>
-      <!-- <h3 class="home-feature-title"><a href="/clingo/">Systems</a></h3> -->
       <p class="home-feature-text">Our core system, clingo, provides a powerful tool for ASP solving. It sits at the core of a broader suite of ASP systems that expand modeling capabilities and simplify integration into larger workflows.</p>
       <div class="home-feature-actions">
          <a class="home-hero-button" href="/clingo/">Get & Docs</a>
          <a class="home-hero-button home-hero-button--demo" href="/clingo/run/">Demo</a>
-         <a class="home-hero-button home-hero-button--secondary" href="/systems/">All systems</a>
+         <a class="home-hero-button home-hero-button--secondary" href="/systems/">Systems</a>
       </div>
    </section>
 </div>
@@ -38,14 +37,14 @@ permalink: /
    tone="navy"
    image="/assets/images/uni-potsdam.png"
    alt="University of Potsdam logo"
-   link="https://www.uni-potsdam.de/"
+   link="<https://www.uni-potsdam.de/>"
    text='The <a href="https://www.cs.uni-potsdam.de/wv/">Research Group for Knowledge Representation and Reasoning</a> at the University of Potsdam specializes in Answer Set Programming (ASP).' %}
 
 {% include callout.html
    tone="blue"
    image="/assets/images/psg_rgb_2colors_digital.png"
    alt="Potassco Solutions logo"
-   link="https://potassco.com"
+   link="<https://potassco.com>"
    text='Our spin-off, <a href="https://potassco.com">Potassco Solutions</a>, provides custom integration and professional support for industrial applications.' %}
 
 {% include callout.html

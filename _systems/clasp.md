@@ -2,7 +2,7 @@
 layout: system
 title: clasp
 summary: An answer set solver for (extended) normal and disjunctive logic programs.
-state: core
+state: stable
 permalink: "/clasp/"
 ---
 

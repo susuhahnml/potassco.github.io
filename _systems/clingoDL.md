@@ -1,11 +1,12 @@
 ---
 layout: system
-title: clingo[DL]
-summary: clingo[DL] extends clingo with difference logic solving capabilities.
-state: major
-date: '2017-06-19'
+title: clingo-dl
+summary: clingo-dl extends clingo with difference logic solving capabilities.
+state: stable
+date: "2017-06-19"
 permalink: "/clingoDL/"
 ---
+
 The system clingo[DL] provides a seamless way to integrate a subset of the theory of linear constraints, namely difference logic, into ASP.
 It deals with constraints of the form `x-y<=k`, where `x` and `y` are integer variables and `k` is an integer constant.
 Despite its restriction, difference logic can be used to naturally encode timing related problems, e.g., scheduling or timetabling,

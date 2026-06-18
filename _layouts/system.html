@@ -1,20 +1,14 @@
 ---
 layout: default
 ---
-{% assign github_repo = page.github_repo | default: page.slug %}
-{% assign system_state = page.state | default: page.section | default: page.system_type | downcase %}
-{% assign state_label = system_state | capitalize %}
-{% if system_state == 'core' %}
-{% assign system_state = 'core' %}
-{% assign state_label = 'Core' %}
-{% elsif system_state == 'stable' or system_state == 'major' %}
-{% assign system_state = 'major' %}
-{% assign state_label = 'Major' %}
-{% elsif system_state == 'experimental' or system_state == 'labs' %}
-{% assign system_state = 'experimental' %}
+{% assign github_repo = page.github_repo %}
+{% assign system_state = page.state %}
+{% assign state_label = 'Error' %}
+{% if system_state == 'stable' %}
+{% assign state_label = 'Stable' %}
+{% elsif system_state == 'experimental' %}
 {% assign state_label = 'Experimental' %}
-{% elsif system_state == 'cemetery' or system_state == 'deprecated' %}
-{% assign system_state = 'deprecated' %}
+{% elsif system_state == 'deprecated' %}
 {% assign state_label = 'Deprecated' %}
 {% endif %}
 <article class="post">

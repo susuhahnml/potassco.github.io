@@ -2,14 +2,16 @@
 layout: system
 title: asprin
 summary: A system for qualitative and quantitative optimization in ASP.
-state: major
+state: stable
 permalink: "/asprin/"
 ---
+
 asprin is a general framework for qualitative and quantitative optimization in ASP that allows:
-* computing optimal stable models of logic programs with preferences, and
-* defining new preference types in a very easy way.
-Some preference types (`subset`, `pareto`, ...) are already defined in `asprin`'s library,
-but many more can be defined simply writing a logic program.
+
+- computing optimal stable models of logic programs with preferences, and
+- defining new preference types in a very easy way.
+  Some preference types (`subset`, `pareto`, ...) are already defined in `asprin`'s library,
+  but many more can be defined simply writing a logic program.
 
 ## Download
 

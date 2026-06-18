@@ -8,19 +8,43 @@ permalink: /systems/
 ---
 
 {% assign systems = site.systems | sort: "title" %}
-{% assign core_items_alpha = systems | where: "state", "core" | where_exp: "item", "item.order == nil" | sort: "title" %}
-{% assign core_items_ordered = systems | where: "state", "core" | where_exp: "item", "item.order != nil" | sort: "order" %}
-{% assign core_items = core_items_ordered | concat: core_items_alpha %}
-{% assign major_items_alpha = systems | where: "state", "major" | where_exp: "item", "item.order == nil" | sort: "title" %}
-{% assign major_items_ordered = systems | where: "state", "major" | where_exp: "item", "item.order != nil" | sort: "order" %}
-{% assign major_items = major_items_ordered | concat: major_items_alpha %}
-{% assign experimental_items_alpha = systems | where: "state", "experimental" | where_exp: "item", "item.order == nil" | sort: "title" %}
-{% assign experimental_items_ordered = systems | where: "state", "experimental" | where_exp: "item", "item.order != nil" | sort: "order" %}
+
+{% assign pinned_items_alpha = systems
+  | where_exp: "item", "item.pinned == 1 and item.order == nil"
+  | sort: "title" %}
+{% assign pinned_items_ordered = systems
+  | where_exp: "item", "item.pinned == 1 and item.order != nil"
+  | sort: "order" %}
+{% assign pinned_items = pinned_items_ordered | concat: pinned_items_alpha %}
+
+{% assign stable_items_alpha = systems
+| where_exp: "item", 'item.state == "stable" and item.pinned != 1 and item.order == nil'
+| sort: "title" %}
+{% assign stable_items_ordered = systems
+| where_exp: "item", 'item.state == "stable" and item.pinned != 1 and item.order != nil'
+| sort: "order" %}
+{% assign stable_items = stable_items_ordered | concat: stable_items_alpha %}
+
+{% assign experimental_items_alpha = systems
+| where_exp: "item", 'item.state == "experimental" and item.pinned != 1 and item.order == nil'
+| sort: "title" %}
+{% assign experimental_items_ordered = systems
+| where_exp: "item", 'item.state == "experimental" and item.pinned != 1 and item.order != nil'
+| sort: "order" %}
 {% assign experimental_items = experimental_items_ordered | concat: experimental_items_alpha %}
-{% assign deprecated_items_alpha = systems | where: "state", "deprecated" | where_exp: "item", "item.order == nil" | sort: "title" %}
-{% assign deprecated_items_ordered = systems | where: "state", "deprecated" | where_exp: "item", "item.order != nil" | sort: "order" %}
+
+{% assign deprecated_items_alpha = systems
+| where_exp: "item", 'item.state == "deprecated" and item.pinned != 1 and item.order == nil'
+| sort: "title" %}
+{% assign deprecated_items_ordered = systems
+| where_exp: "item", 'item.state == "deprecated" and item.pinned != 1 and item.order != nil'
+| sort: "order" %}
 {% assign deprecated_items = deprecated_items_ordered | concat: deprecated_items_alpha %}
-{% assign ordered_systems = core_items | concat: major_items | concat: experimental_items | concat: deprecated_items %}
+
+{% assign ordered_systems = pinned_items
+| concat: stable_items
+| concat: experimental_items
+| concat: deprecated_items %}
 
 {% include callout.html
    tone="green"
@@ -28,13 +52,6 @@ permalink: /systems/
     icon='<i class="fa-brands fa-github"></i>'
    text='Our systems are <b>open source</b>, feel free to contribute and report issues.
 The source code of our projects is available on <a href="https://github.com/potassco/">GitHub</a>.' %}
-
-<!-- {% include callout.html
-   tone="blue"
-   icon='<i class="fa-solid fa-trophy"></i>'
-   link="/trophies/"
-   text='Our systems won shiny awards in different competitions.
-Check out our <a href="/trophies/">trophy page</a>.' %} -->
 
 <div style="height: 20pt;"></div>
 
@@ -63,20 +80,14 @@ Check out our <a href="/trophies/">trophy page</a>.' %} -->
 <script type="text/javascript" charset="utf-8">
  var posts = [
   {% for item in ordered_systems %}
-   {% assign summary = item.summary | default: item.excerpt | default: item.content %}
-   {% assign system_state = item.state | default: item.section | default: item.system_type | downcase %}
-   {% assign state_label = system_state | capitalize %}
-   {% if system_state == 'core' or system_state == 'core' %}
-    {% assign system_state = 'core' %}
-    {% assign state_label = 'Core' %}
-   {% elsif system_state == 'stable' or system_state == 'major' %}
-    {% assign system_state = 'major' %}
-    {% assign state_label = 'Major' %}
-   {% elsif system_state == 'experimental' or system_state == 'labs' %}
-    {% assign system_state = 'experimental' %}
+   {% assign summary = item.summary %}
+   {% assign system_state = item.state %}
+   {% assign state_label = "Error" %}
+   {% if system_state == 'stable' %}
+    {% assign state_label = 'Stable' %}
+   {% elsif system_state == 'experimental' %}
     {% assign state_label = 'Experimental' %}
-   {% elsif system_state == 'cemetery' or system_state == 'deprecated' %}
-    {% assign system_state = 'deprecated' %}
+   {% elsif system_state == 'deprecated' %}
     {% assign state_label = 'Deprecated' %}
    {% endif %}
    {

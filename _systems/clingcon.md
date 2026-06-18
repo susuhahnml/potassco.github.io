@@ -2,9 +2,10 @@
 layout: system
 title: clingcon
 summary: An answer set solver for constraint logic programs.
-state: major
+state: stable
 permalink: "/clingcon/"
 ---
+
 Clingcon is an answer set solver for constraint logic programs,
 building upon the answer set solver clingo.
 It extends the high-level modeling language of ASP with constraint solving capacities.
@@ -16,20 +17,20 @@ and features several preprocessing techniques.
 
 ## Features
 
-* integer linear constraints
-  * `&sum{3*x; 4*y} >= z-7`
-* global distinct constraint
-  * `&distinct{x;y;3*z}`
-* can handle huge variables
-  * no domains needed (-2^30 .. 2^30 as default domain)
-  * `&dom{1..10; 30..40} = x`
-* multi-shot solving using python or lua
-* multi-objective optimization on constraint variables
-  * `&minimize{x;y;z}`
+- integer linear constraints
+  - `&sum{3*x; 4*y} >= z-7`
+- global distinct constraint
+  - `&distinct{x;y;3*z}`
+- can handle huge variables
+  - no domains needed (-2^30 .. 2^30 as default domain)
+  - `&dom{1..10; 30..40} = x`
+- multi-shot solving using python or lua
+- multi-objective optimization on constraint variables
+  - `&minimize{x;y;z}`
 
 ## Example
 
-~~~~
+```
 #include "csp.lp".
 #const end=20.
 #const stepsize=7.
@@ -52,7 +53,7 @@ step(0..end).
 
 &show {at(X):step(X)}.
 #show move/1.
-~~~~
+```
 
 More examples can be found in the [example](https://github.com/potassco/clingcon/tree/master/examples) section.
 
@@ -74,6 +75,7 @@ See [INSTALL](https://github.com/potassco/clingcon/blob/master/README.md) for mo
 - [Experiments for new-old]({{ site.resourceurl }}/clingcon/experiments-newold.tar.xz)
 
 ## Publications
+
 - Max Ostrowski,
   [Modern Constraint Answer Set Solving]({{ site.publicationurl }}/#DBLP:phd/dnb/Ostrowski18), Thesis, 2018 (for version 3)
 - Mutsunori Banbara, Benjamin Kaufmann, Max Ostrowski and Torsten Schaub,

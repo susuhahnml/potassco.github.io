@@ -2,7 +2,8 @@
 layout: system
 title: clingo
 summary: The core system of the Potassco suite, providing a powerful system for ASP solving.
-state: core
+state: stable
+pinned: 1
 permalink: "/clingo/"
 order: 1
 ---

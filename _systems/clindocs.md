@@ -2,11 +2,11 @@
 layout: system
 title: clindocs
 summary: Automatic documentation for ASP
-state: major
+state: stable
 permalink: /clindocs/
 ---
 
-*clindocs* is an automated documentation tool tailored for **Answer Set
+_clindocs_ is an automated documentation tool tailored for **Answer Set
 Programming (ASP)** code. Built on [MkDocs](https://www.mkdocs.org/) and
 [mkdocs-material](https://squidfunk.github.io/mkdocs-material/), it streamlines
 the creation of high-quality documentation with the following features:
@@ -24,4 +24,3 @@ the creation of high-quality documentation with the following features:
 ## Documentation
 
 - [Documentation webpage](https://potassco.org/clindocs/docs) for latest version.
-

@@ -2,9 +2,10 @@
 layout: system
 title: aspcud
 summary: A solver for package dependencies.
-state: major
+state: stable
 permalink: "/aspcud/"
 ---
+
 Aspcud is a solver for package dependencies.
 A package universe and a request to install, remove, or upgrade packages have to be encoded in the CUDF format.
 Such a CUDF document can then be passed to aspcud along with an optimization criteria to obtain a solution to the given package problem.
