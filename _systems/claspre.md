@@ -2,10 +2,11 @@
 layout: system
 title: claspre
 summary: A tool that makes clasp's pre-processing functionalities available in a stand-alone tool.
-state: experimental
-date: '2016-09-20'
+state: deprecated
+date: "2016-09-20"
 permalink: "/labs/claspre/"
 ---
+
 claspre offers the pre-processing functionalities of clasp in a stand-alone
 tool. Recent clasp version offer this via option `--pre`.
 

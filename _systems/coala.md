@@ -1,16 +1,18 @@
 ---
 layout: system
 title: coala
-summary: Translator from the action language BC to ASP facts.
-state: experimental
-date: '2016-09-20'
+summary: A translator from the action language BC to ASP facts.
+state: deprecated
+date: "2016-09-20"
 permalink: "/labs/coala/"
 ---
+
 Coala is a python tool that translates BC into ASP facts.
 For earlier versions for other action language see [Legacy](#legacy).
 If you found a bug or would like to leave a comment, please write an email to &#99;&#104;&#114;&#105;&#115;&#116;&#105;&#97;&#110;.&#115;&#99;&#104;&#117;&#108;&#122;-&#104;&#97;&#110;&#107;&#101;( &#97;&#116; )&#99;s.uni-potsdam.de
 
 ## Content
+
 - [Features](#features)
 - [Download](#download)
 - [Install](#installation)
@@ -29,16 +31,18 @@ Coala features the following options:
 - A Script for cleaning up the clingo output
 - A Script for incremental solving
 - Encodings for the following
-    - Printing States of the BC Program
-    - Printing possible Transitions of the BC Program
-    - Generating Plans given an initial State, goal fluent-assignments and a number of steps
-    - Incrementally generating Plans given an initial State, goal fluent-assignments
-    - Printing States and Transitions of BC Progams with integers (using clingcon)
+  - Printing States of the BC Program
+  - Printing possible Transitions of the BC Program
+  - Generating Plans given an initial State, goal fluent-assignments and a number of steps
+  - Incrementally generating Plans given an initial State, goal fluent-assignments
+  - Printing States and Transitions of BC Progams with integers (using clingcon)
 
 ## Download
-Get the most recent Version from Github: https://github.com/potassco/coala
+
+Get the most recent Version from Github: <https://github.com/potassco/coala>
 
 ## Installation
+
 Download the file, unpack it and install it using
 
 ```
@@ -52,6 +56,7 @@ Alternatively, it can be run directly from the unpacked folder using python
 ```
 
 ## Usage
+
 When installed, coala can be called from anywhere.
 
 ```
@@ -65,15 +70,14 @@ the facts given by coala can be run the "encodings/base_translation.lp" using cl
     coala file.bc | clingo - encodings/base_translation.lp 0
 ```
 
-
 Or when using the gringo python library
 
 ```
     coala -p -m ps file.bc
 ```
 
-
 Information on parameters can be printed calling coala without parameters
+
 ```
     coala
 ```
@@ -114,6 +118,7 @@ Solve arguments
 ```
 
 Some addition Information is given using the help parameter
+
 ```
     coala -h
 ```
@@ -121,6 +126,7 @@ Some addition Information is given using the help parameter
 ## Syntax
 
 The language has the following reserved words:
+
 - not, true, false, if, causes,
 - ifcons, after, default, inertial,
 - nonexecutable, impossible, action,
@@ -131,15 +137,17 @@ In the following, we will be using "<" and " to make it easier to distinguish be
 fluents, actions and reserved words.
 Note that we accept both with and without "<" and ".
 
-
 The BC syntax of coala requires the users to define actions and fluents used in the laws.
+
 ```
 <action> jump.
 <fluent> position(inair).
 <fluent> alive.
 ```
+
 By default, fluents have a boolean domain.
 Multivalued fluents can be used by explicitly stating their domain.
+
 ```
 <fluent> position=inair.
 <fluent> position=onground.
@@ -148,52 +156,63 @@ Multivalued fluents can be used by explicitly stating their domain.
 ```
 
 If the domain is defined in asp code, a more comact form can be used:
+
 ```
 <asp> domain(1..1000). domain(6789).</asp>
 <fluent> position=X <where> domain(X).
 ```
 
 The static laws of BC are written as
+
 ```
 alive <if> -dead.
 at(1,2) <ifcons> at(1,2).
 position(onground) <if> -position(inair) <ifcons> -flying.
 ```
+
 Only fluents can be used in static laws.
 
 The dynamic laws of BC are written as
+
 ```
 buttonpressed <after> toggle.
 has(cup) <after> pickup(cup), at(cup).
 position(inair) <after> jump, position(onground) <ifcons> position(inair).
 ```
+
 Actions may only be used in the **after** part.
 
 Inertial and default laws are written
+
 ```
 <inertial>position(onground).
 <default> onground.
 <default> -position(inair).
 ```
+
 The inertial law means that position(onground) will keep it's value unless changed.
 The default law means that at each step position(inair) will be set to false if not stated otherwise.
 
 Additionally, nonexecutable and impossible laws are written as
+
 ```
 <nonexecutable> jump, position(inair).
 <nonexecutable> jump <if> indoors.
 <impossible> position(onground), position(inair).
 <impossible> at(1,2), has(object).
 ```
+
 Impossible laws are state constraints and may only contain fluents while
 Nonexecutable laws may contain actions and fluents and restrict possible successor states.
 
 We also included variables into our syntax. These need to be bound in a **where** part.
+
 ```
 at(X) <after> goto(X) <where> <action> goto(X).
 ```
 
 In **where** parts, variables can be bound to fluents, actions and arbitrary asp facts.
+
 ```
 at(X) <after> goto(X) <where> <action> goto(X).
 ```
@@ -211,14 +230,17 @@ at(X) <after> goto(X) <where> arbitrary_position(X).
 ```
 
 Plain asp code can be added encapsulated by **ASP** tags.
+
 ```
 <asp>arbitrary_position(1..10).</asp>
 <asp>some_crazy_asp(X) :- 1 { something_definately_not_in_BC(Z)} 1, &sum {arg*1024, buarg*56, cargh} = 1.
 i_know_what_im_doing :- not not i_know_what_im_doing.</asp>
 ```
+
 ASP code will not be checked in coala. (It will be pasted into the output)
 
 It is also allowed to use negation and arithmetic in the **where** part.
+
 ```
 at(X) <after> goto(X) <where> pos(X), not badposition(X).
 at(Y) <after> goto(X) <where> pos(X), Y = X + 1.
@@ -227,22 +249,26 @@ at(Y) <after> goto(X) <where> pos(X), pos(Y), Y != X.
 at(Y) <after> goto(X) <where> pos(X), Y = X ** 1.
 at(Y) <after> goto(X) <where> pos(X), Y = X / 2.
 ```
+
 Note that each variable still needs to be bound somewhere.
 
 For finding plans, we added initial values and goals.
 They are not part of BC and will have no effect unless modified encodings are used.
 Initial values can be set using a simple rule like shown in the file "encodings/base_initial.lp" : "holds(F,0) :- initially(F)."
 Initial values of fluents can be set using
+
 ```
 <initially> -dead.
 ```
 
 And goals can be defined using
+
 ```
 <goal> winning.
 ```
 
 ## Examples
+
 coala includes a few examples, like:
 
 - examples/medical.bc
@@ -251,20 +277,24 @@ coala includes a few examples, like:
 
 These examples include one instance each.
 
-- examples/medical\_instance.bc
-- examples/sumo\_instance.bc
-- examples/walkbot\_instance.bc
-
+- examples/medical_instance.bc
+- examples/sumo_instance.bc
+- examples/walkbot_instance.bc
 
 These example can be translated by passing them to coala
+
 ```
     coala examples/medical.bc examples/medical_instance.bc
 ```
+
 In order to generate states and transitions using clingo for some example, you can use the following call
+
 ```
     coala examples/medical.bc examples/medical_instance.bc | clingo - encodings/base_translation.lp 0
 ```
+
 This will generate one answer set for every transition.
+
 ```
 [...]
 Answer: 40
@@ -299,11 +329,13 @@ CPU Time     : 0.000s
 
 Since we are normally only interested in "holds" and "occurs" predicates,
 we provide a script for cleaning the clingo output for BC output, called outputformatclingocoala
+
 ```
     coala examples/medical.bc examples/medical_instance.bc | clingo - encodings/base_translation.lp 0 | outputformatclingocoala
 ```
 
 This generates the following output:
+
 ```
 [...]
 Answer: 39
@@ -325,11 +357,15 @@ occurs(act(look),0)
 
 SATISFIABLE
 ```
+
 If you have the gringo library installed and in your python path (old library, the clingo library might get supported later), given a **goal** and an **initial** state, you can call
+
 ```
     coala -m solveiterative examples/medical.bc examples/medical_instance.bc
 ```
+
 This generates a plan for the given transition system from the/an initial state to a state satisfying the goal.
+
 ```
 Plan:
 
@@ -341,42 +377,44 @@ Step  2 : ['-dead', '-infected', 'hydrated']
 
 ```
 
-
-
 (
 Additionally to these examples, the "testcases" directory contains additional files that may help understanding the syntax.
 However, some of the testcases need to be run with experimental parameters which are not listed.
 Files with the ending ".b" are written for the action description language B, therefore the parameter "-l b" must be used.
-Files beginning with "role_" are written using a modular approach and are translated using the parameter "-l bce" or "-l bca".
- )
+Files beginning with "role\_" are written using a modular approach and are translated using the parameter "-l bce" or "-l bca".
+)
 
 There is also one example for multivalued fluents, where the instance is included in the file:
+
 ```
     coala -m solveiterative examples/monkey/monkey.bc
 ```
 
-
 Incremental solving by example can be done calling
+
 ```
     coala examples/monkey/monkey.bc | clingo - encodings/solve_incremental.lp 5 -W none -q
 ```
 
-
 ## Hints
+
 It is possible to use variables representing any action or fluent.
 
-
 You can write:
+
 ```
 <inertial> A <where> <fluent> A.
 ```
 
 If you want all fluents to be inertial or
+
 ```
 <default> -A <where> <fluent> A.
 ```
+
 If you want all fluents to be false by default.
 Also, you can restrict the actions to maximal one per step by:
+
 ```
 <nonexecutable> A,B <where> <action> A, <action> B, A != B.
 ```
@@ -385,11 +423,12 @@ In BC, you normally get no answer set when something went wrong.
 One thing to check then is whether each fluent has either an inertial or default law.
 Additionally, removing impossible and nonexecutable laws might help to track down the problem.
 You can use the print states mode of coala with the (currently gringo) python library in order to list all possible states:
+
 ```
     coala -p -m ps instance.bc
 ```
-Printing only positive fluents ( -p ) may prove useful there.
 
+Printing only positive fluents ( -p ) may prove useful there.
 
 ## Legacy
 

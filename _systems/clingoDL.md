@@ -1,10 +1,12 @@
 ---
 layout: system
 title: clingo-dl
-summary: clingo-dl extends clingo with difference logic solving capabilities.
+summary: A solver extending clingo with difference constraint solving capabilities.
 state: stable
 date: "2017-06-19"
 permalink: "/clingoDL/"
+pinned: 1
+order: 2
 ---
 
 The system clingo[DL] provides a seamless way to integrate a subset of the theory of linear constraints, namely difference logic, into ASP.

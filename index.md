@@ -24,9 +24,9 @@ permalink: /
 
    <section class="home-feature home-feature--clingo">
       <p class="home-feature-eyebrow">The clingo system</p>
-      <p class="home-feature-text">Our core system, clingo, provides a powerful tool for ASP solving. It sits at the core of a broader suite of ASP systems that expand modeling capabilities and simplify integration into larger workflows.</p>
+      <p class="home-feature-text">Clingo is a powerful system for ASP solving. It sits at the core of a broader suite of ASP systems that expand modeling capabilities and simplify integration into larger workflows.</p>
       <div class="home-feature-actions">
-         <a class="home-hero-button" href="/clingo/">Get & Docs</a>
+         <a class="home-hero-button" href="/clingo/">Docs & Download</a>
          <a class="home-hero-button home-hero-button--demo" href="/clingo/run/">Demo</a>
          <a class="home-hero-button home-hero-button--secondary" href="/systems/">Systems</a>
       </div>
@@ -38,7 +38,7 @@ permalink: /
    image="/assets/images/uni-potsdam.png"
    alt="University of Potsdam logo"
    link="<https://www.uni-potsdam.de/>"
-   text='The <a href="https://www.cs.uni-potsdam.de/wv/">Research Group for Knowledge Representation and Reasoning</a> at the University of Potsdam specializes in Answer Set Programming (ASP).' %}
+   text='The <a href="https://www.cs.uni-potsdam.de/wv/">Knowledge Representation and Reasoning group</a> at the University of Potsdam specializes in Answer Set Programming (ASP).' %}
 
 {% include callout.html
    tone="blue"

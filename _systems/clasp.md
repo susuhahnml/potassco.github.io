@@ -4,6 +4,8 @@ title: clasp
 summary: An answer set solver for (extended) normal and disjunctive logic programs.
 state: stable
 permalink: "/clasp/"
+pinned: 1
+order: 3
 ---
 
 clasp is an answer set solver for (extended) normal and disjunctive logic programs.

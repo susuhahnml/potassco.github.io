@@ -28,5 +28,10 @@ The goal is to simplify the process of defining and running custom extensions by
 ## Resources
 
 - [Benchmarks ICLP'26](https://github.com/potassco/metasp/blob/v1.0.2/benchmarks/README.md)
+- Meta encodings within the [clingo project](/clingo/) in the [examples/reify/](https://github.com/potassco/clingo/tree/master/examples/reify/) folder
 
 ## Publications
+
+- Martin Gebser, Roland Kaminski and Torsten Schaub,
+  [Complex Optimization in Answer Set Programming: Extended Version]({{ site.publicationurl }}/#TEMP:journals/tplp/GebserKS11x),
+  [[Experiments]({{ site.resourceurl }}/metasp/experiments.tar.xz)]

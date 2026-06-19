@@ -1,14 +1,14 @@
 ---
 layout: system
 title: gtapf
-summary: General target assignment and path finding using answer set programming
-state: experimental
-date: '2017-05-24'
+summary: General target assignment and path finding using answer set programming.
+state: deprecated
+date: "2017-05-24"
 permalink: "/labs/gtapf/"
 ---
-*gtapf* is a generalization of *Target Assignment and Path Finding (TAPF)* planning problems for which
-we propose solutions using ASP.
 
+_gtapf_ is a generalization of _Target Assignment and Path Finding (TAPF)_ planning problems for which
+we propose solutions using ASP.
 
 ## Demo
 
@@ -20,11 +20,9 @@ src="https://www.youtube.com/embed/lAeMZ8LINvY"
 frameborder="0"
 allowfullscreen></iframe>
 
-
 ## Publications
 
-1.  <a id="gtapf_ijca17"></a>Nguyen, V., Obermeier, P., Son, T., Schaub, T., Yeoh, W.: Generalized
-    Target Assignment and Path Finding Using Answer Set Programming. In Proceedings of the
-    Twenty-sixth International Joint Conference on Artificial Intelligence (IJCAI’17), 2017, to be
-    published. [[PDF](https://www.ijcai.org/proceedings/2017/0169.pdf)]
-
+1. <a id="gtapf_ijca17"></a>Nguyen, V., Obermeier, P., Son, T., Schaub, T., Yeoh, W.: Generalized
+   Target Assignment and Path Finding Using Answer Set Programming. In Proceedings of the
+   Twenty-sixth International Joint Conference on Artificial Intelligence (IJCAI’17), 2017, to be
+   published. [[PDF](https://www.ijcai.org/proceedings/2017/0169.pdf)]

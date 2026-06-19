@@ -1,13 +1,14 @@
 ---
 layout: system
 title: asprilo
-summary: Robotic intra-logistics with answer set progamming
+summary: Robotic intra-logistics with ASP.
 state: experimental
-date: '2018-02-20'
+date: "2018-02-20"
 permalink: "/labs/asprilo/"
 asprilourl: https://asprilo.github.io
 ---
-## What is *asprilo*?
+
+## What is _asprilo_?
 
 **asprilo** is an benchmarking framework to study typical scenarios in intra-logistics and warehouse
 automation with multiple mobile robots. It offers a concise specification of this problem domain
@@ -18,11 +19,11 @@ general. Although, the implementation of asprilo relies on [answer set programmi
 (ASP)](https://en.wikipedia.org/wiki/Answer_set_programming) and Python, it also supports any other
 approach that complies with its fact-based I/O interface.
 
-| "Full Warehouse Domain" (A-Domain)  | "Movement-Only Domain" (M-Domain) |
-|:-:|:-:|
-[![](https://img.youtube.com/vi/ifYKHIvdnjw/0.jpg)](https://www.youtube.com/watch?v=ifYKHIvdnjw) | [![](https://img.youtube.com/vi/GHRwpWzL0j8/0.jpg)](https://www.youtube.com/watch?v=GHRwpWzL0j8)
+|                                "Full Warehouse Domain" (A-Domain)                                |                                "Movement-Only Domain" (M-Domain)                                 |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| [![](https://img.youtube.com/vi/ifYKHIvdnjw/0.jpg)](https://www.youtube.com/watch?v=ifYKHIvdnjw) | [![](https://img.youtube.com/vi/GHRwpWzL0j8/0.jpg)](https://www.youtube.com/watch?v=GHRwpWzL0j8) |
 
-(*Click images for video playback*)
+(_Click images for video playback_)
 
 ## Documentation
 
@@ -34,6 +35,6 @@ The source code of the project is available at <https://github.com/potassco/aspr
 
 ## Publications
 
-- Gebser, M., Obermeier, P., Otto, T., Schaub, T., Sabuncu, O., Nguyen, V., & Son, T. C. (2018). [Experimenting with robotic intra-logistics domains]({{ site.publicationurl }}//#DBLP:journals/corr/abs-1804-10247). *CoRR*, abs/1804.10247. [[Experiments]({{ page.asprilourl }}/experiments/#evaluation-2018-02)]
-- Gebser, M., Obermeier, P., Otto, T., Schaub, T., Sabuncu, O., Nguyen, V., & Son, T. C. (2018). [Experimenting with robotic intra-logistics domains]({{ site.publicationurl }}//#DBLP:journals/tplp/GebserOOS18). *TPLP*, 18(3-4), 502–519. [[Experiments]({{ page.asprilourl }}/experiments/#evaluation-2018-02)]
-- Nguyen, V., Obermeier, P., Son, T. C., Schaub, T., & Yeoh, W. (2017). [Generalized Target Assignment and Path Finding Using Answer Set Programming]({{ site.publicationurl }}//#DBLP:conf/ijcai/NguyenOSS017). In *IJCAI* (pp. 1216–1223). ijcai.org.
+- Gebser, M., Obermeier, P., Otto, T., Schaub, T., Sabuncu, O., Nguyen, V., & Son, T. C. (2018). [Experimenting with robotic intra-logistics domains]({{ site.publicationurl }}//#DBLP:journals/corr/abs-1804-10247). _CoRR_, abs/1804.10247. [[Experiments]({{ page.asprilourl }}/experiments/#evaluation-2018-02)]
+- Gebser, M., Obermeier, P., Otto, T., Schaub, T., Sabuncu, O., Nguyen, V., & Son, T. C. (2018). [Experimenting with robotic intra-logistics domains]({{ site.publicationurl }}//#DBLP:journals/tplp/GebserOOS18). _TPLP_, 18(3-4), 502–519. [[Experiments]({{ page.asprilourl }}/experiments/#evaluation-2018-02)]
+- Nguyen, V., Obermeier, P., Son, T. C., Schaub, T., & Yeoh, W. (2017). [Generalized Target Assignment and Path Finding Using Answer Set Programming]({{ site.publicationurl }}//#DBLP:conf/ijcai/NguyenOSS017). In _IJCAI_ (pp. 1216–1223). ijcai.org.

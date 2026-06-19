@@ -2,10 +2,11 @@
 layout: system
 title: fimo
 summary: A system for computing finite models of first-order theories.
-state: experimental
-date: '2016-09-20'
+state: deprecated
+date: "2016-09-20"
 permalink: "/labs/fimo/"
 ---
+
 fimo is a system for computing finite models of first-order theories
 (written in [TPTP](http://www.cs.miami.edu/~tptp/) format)
 via incremental Answer Set Programming.

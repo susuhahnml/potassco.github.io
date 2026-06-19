@@ -1,13 +1,10 @@
 ---
-layout: posts
+layout: page
 title: Support
 menu: main
 weight: 5
 hide_title: true
 permalink: /support/
-sorting: alpha
-category: faq
-search_placeholder: Search FAQs
 ---
 
 ## Before asking for help
@@ -28,6 +25,4 @@ Please take the time to report it using the issue trackers of the respective pro
   The <i>potassco-users</i> list is for all kinds of questions about our tools
   and the <i>potassco-announce</i> list is a read-only low frequency list where we announce new releases.' %}
 
-- Also check the <a href="https://sourceforge.net/p/potassco/mailman/potassco-users/">potassco-users archive</a>, maybe your question already has an answer.
-
-## Frequently Asked Questions
+Also check the <a href="https://sourceforge.net/p/potassco/mailman/potassco-users/">potassco-users archive</a>, maybe your question already has an answer.

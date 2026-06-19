@@ -2,10 +2,11 @@
 layout: system
 title: inca (University of New South Wales, Australia)
 summary: A prototypical constraint answer set programming system.
-state: experimental
-date: '2016-09-20'
+state: deprecated
+date: "2016-09-20"
 permalink: "/labs/inca/"
 ---
+
 inca is a prototypical constraint answer set programming system.
 Like [clingcon](/clingcon/), it extends the modelling language of ASP with constraints over finite domain integer variables.
 Unlike clingcon, inca adopts lazy nogood generation to fully integrate constraint propagation into conflict-driven learning.

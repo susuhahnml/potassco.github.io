@@ -1,7 +1,7 @@
 ---
 layout: system
 title: clindocs
-summary: Automatic documentation for ASP
+summary: System for automatic documentation of logic programs.
 state: stable
 permalink: /clindocs/
 ---

@@ -2,10 +2,11 @@
 layout: system
 title: claspfolio
 summary: A portfolio solver for ASP using machine-learning to configure clasp.
-state: experimental
-date: '2016-09-20'
+state: deprecated
+date: "2016-09-20"
 permalink: "/labs/claspfolio/"
 ---
+
 claspfolio is a portfolio solver for ASP that makes use of machine-learning techniques for performing algorithm selection, choosing among different configurations of clasp.
 
 In 2009, claspfolio was the best single-system solver in the global ranking of the [Second ASP Competition](http://www.cs.kuleuven.be/~dtai/events/ASP-competition/Results.shtml).

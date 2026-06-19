@@ -1,4 +1,4 @@
-{% assign summary = include.item.summary | strip_html | normalize_whitespace | truncate: 180 %}
+{% assign summary = include.item.summary %}
 {% assign system_state = include.item.state %}
 {% assign state_label = 'Error' %}
 {% if system_state == 'stable' %}
@@ -12,5 +12,5 @@
     {% if include.item.pinned == 1 %}📌 {% endif %}
     <a href="{{ include.item.url }}">{{ include.item.title }}</a>
     {% if system_state %}<span class="system-badge system-badge--{{ system_state }}">{{ state_label }}</span>{% endif %}
-    <p>{{ summary | capitalize }}</p>
+    <p>{{ summary }}</p>
 </div>

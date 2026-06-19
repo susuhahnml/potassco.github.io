@@ -57,6 +57,6 @@ Available at: [Springer](https://link.springer.com/book/10.1007/978-3-030-24658-
 
 ## Other prominent ASP systems
 
-- [DLV](https://dlv.demacs.unical.it/) is an ASP system based on disjunctive logic programming, which offers front-ends for several advanced KR formalisms.
+- [DLV](https://dlv.demacs.unical.it/) is an ASP system based offering front-ends for several advanced KR formalisms.
 
-- [Wasp](http://alviano.github.io/wasp/) is an ASP solver for disjunctive logic programs under the stable model semantics.
+- [Wasp](http://alviano.github.io/wasp/) is an ASP solver for propositional logic programs.

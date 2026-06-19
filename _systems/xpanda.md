@@ -2,10 +2,11 @@
 layout: system
 title: xpanda
 summary: Solve logic programs with CSP constaints via translation.
-state: experimental
-date: '2016-09-20'
+state: deprecated
+date: "2016-09-20"
 permalink: "/labs/xpanda/"
 ---
+
 Like Clingcon, xpanda allows for using constraints over finite domain integer variables in logic programs.
 Unlike with Clingcon, such constraints are expanded, leading to (non-ground) rules that can be
 grounded by Gringo.
