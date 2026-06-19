@@ -1,13 +1,25 @@
 #output {
   margin: 10px auto;
-  font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
-  text-align:left;
+  font:
+    12px/normal "Monaco",
+    "Menlo",
+    "Ubuntu Mono",
+    "Consolas",
+    "source-code-pro",
+    monospace;
+  text-align: left;
 }
 #input {
   margin: 10px auto;
   margin-top: 0;
-  text-align:left;
-  font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+  text-align: left;
+  font:
+    12px/normal "Monaco",
+    "Menlo",
+    "Ubuntu Mono",
+    "Consolas",
+    "source-code-pro",
+    monospace;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -44,18 +56,17 @@
   flex-wrap: wrap;
 }
 #tabs li {
-  margin-right: .2em;
+  background: #f0f0f0;
+  margin-right: 0.2em;
   padding: 0.1em 0.4em;
-  background: #fff;
   border: 1px solid #e8e8e8;
   border-radius: 4px 4px 0 0;
   cursor: pointer;
   font-size: 1em;
   transition: background 0.2s;
-  
 }
 #tabs li.active {
-  background: #f0f0f0;
+  background: #fff;
   border-bottom: 2px solid #007acc;
   font-weight: bold;
 }
@@ -92,7 +103,7 @@
   outline: none;
   box-shadow: none;
   color: #888;
-  font-size: .7em;
+  font-size: 0.7em;
   cursor: pointer;
   margin-left: auto;
   margin-right: 0;
@@ -100,7 +111,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 .tab-close:hover {
   color: #d00;
@@ -111,14 +124,16 @@
 }
 .hlist li {
   display: inline;
-  padding-right: .7em;
-  padding-left: .7em;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
 }
 .center {
-  text-align:center;
+  text-align: center;
 }
-.option-lua { }
-.option-python { }
+.option-lua {
+}
+.option-python {
+}
 .language-switch {
   display: inline-block;
 }
@@ -149,20 +164,20 @@
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: .4s;
+  transition: 0.4s;
 }
 .slider:before {
   position: absolute;
   content: "";
   height: 14px; /* Reduced height */
-  width: 14px;  /* Reduced width */
+  width: 14px; /* Reduced width */
   left: 3px;
   bottom: 3px;
   background-color: white;
-  transition: .4s;
+  transition: 0.4s;
 }
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 input:checked + .slider:before {
   transform: translateX(16px); /* Adjusted for new width */
@@ -213,22 +228,22 @@ input:checked + .slider:before {
   font-weight: bold;
 }
 .workspace-menu {
-  display:inline-block;
-  position:relative;
+  display: inline-block;
+  position: relative;
 }
 #workspace-menu-dropdown {
-  display:none;
-  position:absolute;
-  background:#fff;
-  border:1px solid #ccc;
-  z-index:10;
-  min-width:180px;
-  right:0;
+  display: none;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 10;
+  min-width: 180px;
+  right: 0;
 }
 #workspace-list {
-  max-height:150px;
-  overflow-y:auto;
-  margin-bottom:4px;
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 4px;
 }
 .workspace-buttons {
   gap: 4px;
