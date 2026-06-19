@@ -1,7 +1,5 @@
-% instance
-motive(harry).
-motive(sally).
+%%% Tab: instance.lp
+motive(harry;sally).
 guilty(harry).
-
-% encoding
+%%% Tab: encoding.lp
 innocent(Suspect) :- motive(Suspect), not guilty(Suspect).

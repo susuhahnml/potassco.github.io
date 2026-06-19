@@ -1,20 +1,20 @@
-importScripts('clingo.js');
+importScripts("clingo.js");
 
-let Clingo = null
+let Clingo = null;
 
 const messageSchemas = {
     run: {
         args: "array",
-        input: "string",
+        files: "array",
     },
-    init: {}
+    init: {},
 };
 
 function validateMessage(msg, schemas) {
-    if (!msg || typeof msg !== 'object') {
+    if (!msg || typeof msg !== "object") {
         return "Invalid message format: Expected an object.";
     }
-    if (!msg.type || typeof msg.type !== 'string') {
+    if (!msg.type || typeof msg.type !== "string") {
         return "Invalid message: 'type' must be a string.";
     }
     const schema = schemas[msg.type];
@@ -30,13 +30,12 @@ function validateMessage(msg, schemas) {
     return null;
 }
 
-self.addEventListener('message', (e) => {
-    const msg = e.data
+self.addEventListener("message", (e) => {
+    const msg = e.data;
     const error = validateMessage(msg, messageSchemas);
     if (error) {
         postMessage({ type: "stderr", value: error });
-    }
-    else if (msg.type === 'init') {
+    } else if (msg.type === "init") {
         Module({
             print: (text) => {
                 postMessage({ type: "stdout", value: text });
@@ -47,12 +46,22 @@ self.addEventListener('message', (e) => {
             monitorRunDependencies: (left) => {
                 postMessage({ type: "progress", value: left });
             },
-        }).then((m) => { Clingo = m; postMessage({ type: "init" }) });
+        }).then((m) => {
+            Clingo = m;
+            postMessage({ type: "init" });
+        });
+    } else if (msg.type === "run") {
+        const vec = new Clingo.StringVec();
+        msg.files.forEach((file) => {
+            Clingo.FS.writeFile(file.name, file.content);
+            vec.push_back(file.name);
+        });
+        for (const arg of msg.args) {
+            vec.push_back(arg);
+        }
+        Clingo.run_default(vec);
+        postMessage({ type: "exit" });
     }
-    else if (msg.type === 'run') {
-        Clingo.ccall('run', 'number', ['string', 'string'], [msg.input, msg.args.join(' ')])
-        postMessage({ type: "exit" })
-    }
-})
+});
 
 postMessage({ type: "ready" });
