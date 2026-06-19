@@ -9,7 +9,7 @@ pinned: 1
 order: 2
 ---
 
-The system clingo[DL] provides a seamless way to integrate a subset of the theory of linear constraints, namely difference logic, into ASP.
+The clingo-dl system provides a seamless way to integrate a subset of the theory of linear constraints, namely difference logic, into ASP.
 It deals with constraints of the form `x-y<=k`, where `x` and `y` are integer variables and `k` is an integer constant.
 Despite its restriction, difference logic can be used to naturally encode timing related problems, e.g., scheduling or timetabling,
 and provides the additional advantage of being solvable in polynomial time.
@@ -17,13 +17,13 @@ Syntactically, a difference constraint `x-y<=k` is represented by a difference c
 
 ## Download
 
-- Recent clingo[DL] releases are on github: [https://github.com/potassco/clingoDL/releases](https://github.com/potassco/clingoDL/releases).
-- The latest source is on github: [github.com/potassco/clingoDL](https://github.com/potassco/clingoDL).
+- Recent clingo-dl releases are on github: [https://github.com/potassco/clingo-dl/releases](https://github.com/potassco/clingo-dl/releases).
+- The latest source is on github: [github.com/potassco/clingo-dl](https://github.com/potassco/clingo-dl).
 
 ## Resources
 
 - [Potassco User Guide](https://github.com/potassco/guide)
-- [Advanced Examples](https://github.com/potassco/clingoDL/tree/master/examples)
+- [Advanced Examples](https://github.com/potassco/clingo-dl/tree/master/examples)
 
 ## Publications
 
