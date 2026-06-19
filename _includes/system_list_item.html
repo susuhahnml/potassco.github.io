@@ -9,7 +9,7 @@
 {% assign state_label = 'Deprecated' %}
 {% endif %}
 <div>
-    {% if include.item.pinned == 1 %}📌 {% endif %}
+    {% if include.item.pinned == 1 %}<i class="fa-solid fa-thumbtack" style="color:var(--blue-color)"></i>{% endif %}
     <a href="{{ include.item.url }}">{{ include.item.title }}</a>
     {% if system_state %}<span class="system-badge system-badge--{{ system_state }}">{{ state_label }}</span>{% endif %}
     <p>{{ summary }}</p>
