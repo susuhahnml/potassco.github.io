@@ -5,3 +5,6 @@ Gemfile.lock
 .jekyll-metadata
 .bundle
 .gem
+.vscode
+.DS_Store
+_bundle

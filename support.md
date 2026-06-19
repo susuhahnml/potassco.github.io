@@ -3,18 +3,26 @@ layout: page
 title: Support
 menu: main
 weight: 5
+hide_title: true
 permalink: /support/
 ---
 
-- Be sure to take a look at the [documentation page](/doc/) especially the [getting started page](/doc/start).
-- Check our [FAQ](/doc/faq/).
-- If you think you found a bug,
-  please take the time to report it using the issue trackers of the respective projects:
-  - [clingo issues](https://github.com/potassco/clingo/issues)
-  - [clasp issues](https://github.com/potassco/clasp/issues)
-  - [website issues](https://github.com/potassco/potassco.github.io/issues)
-  - or find the project among the [Potassco gits](https://github.com/potassco)
-- You can also sign up to our [mailing lists](https://sourceforge.net/p/potassco/mailman/) hosted on sourceforge.
-  The potassco-users list is for all kinds of questions about our tools
-  and the potassco-announce list is a read-only low frequency list where we announce new releases.
-  Also check the [potassco-users archive](https://sourceforge.net/p/potassco/mailman/potassco-users/), maybe your question already has an answer.
+## Before asking for help
+
+Be sure to first take a look at our [guide](/guide/) and [resources page](/resources/).
+
+## Found a bug?
+
+Please take the time to report it using the issue trackers of the respective project in [GitHub](https://github.com/potassco/).
+
+## Reach out to us
+
+{% include callout.html
+   tone="blue"
+   icon='<i class="fa-solid fa-envelope"></i>'
+   link="<https://sourceforge.net/p/potassco/mailman/>"
+   text='You can also join our <a href="https://sourceforge.net/p/potassco/mailman/">mailing lists</a> hosted on SourceForge. <br>
+  The <i>potassco-users</i> list is for all kinds of questions about our tools
+  and the <i>potassco-announce</i> list is a read-only low frequency list where we announce new releases.' %}
+
+Also check the <a href="https://sourceforge.net/p/potassco/mailman/potassco-users/">potassco-users archive</a>, maybe your question already has an answer.
